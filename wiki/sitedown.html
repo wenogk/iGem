@@ -11,7 +11,9 @@
   const name = document.getElementById('user_item').innerText;
   return name.charAt(0).toUpperCase() + name.slice(1);
   }
+  document.addEventListener("DOMContentLoaded", function(){
   document.getElementById('downH1').innerHTML="We&rsquo;ll be back soon " + getName() + "!";
+});
 </script>
 <style>
   #downH1 { font: 50px Helvetica, sans-serif; color: #FFF; }
