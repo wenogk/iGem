@@ -24,5 +24,13 @@
     </div>
 </article>
 </div>
+<script>
+  let getName = () => {
+  const name = document.getElementById('user_item').innerText;
+  return name.charAt(0).toUpperCase() + name.slice(1);
+  }
+  document.getElementById('downH1').innerHTML="We&rsquo;ll be back soon " + getName() + "!";
+</script>
 </body>
+
 </html>
