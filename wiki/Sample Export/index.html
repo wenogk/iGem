@@ -11,34 +11,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
-    <link rel="stylesheet" href="assets/css/Side-By-Side-Section.css">
-    <link rel="stylesheet" href="assets/css/Article-Clean.css">
-    <link rel="stylesheet" href="assets/css/customigem.compiled.css">
-    <link rel="stylesheet" href="assets/css/dh-row-text-image-right.css">
-    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="assets/css/igemCustom.compiled.css">
-    <link rel="stylesheet" href="assets/css/Juvi---Push-Empty-Space-20px.css">
-    <link rel="stylesheet" href="assets/css/Right-Sidebar.css">
-    <link rel="stylesheet" href="assets/css/Sidebar-1.css">
-    <link rel="stylesheet" href="assets/css/Sidebar-Menu-1.css">
-    <link rel="stylesheet" href="assets/css/Sidebar-Menu.css">
-    <link rel="stylesheet" href="assets/css/Sidebar.css">
-    <link rel="stylesheet" href="assets/css/Team-Grid.css">
-    <link rel="stylesheet" href="assets/css/untitled.compiled.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body id="page-top">
-    <!-- Start: JS DEPENDANCIES --><script
+    <!-- Start: DEPENDANCIES AND PRELOADING --><script
   src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
 <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/TweenMax?action=raw&ctype=text/javascript"></script>
 <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/ScrollMagic?action=raw&ctype=text/javascript"></script>
 <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/AnimationGsap?action=raw&ctype=text/javascript"></script>
 
 <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/IndicatorDebug?action=raw&ctype=text/javascript"></script>
+<link rel="prefetch" href="https://2019.igem.org/wiki/images/0/00/T--NYU_Abu_Dhabi--iphone.png">
+<link rel="prefetch" href="https://2019.igem.org/wiki/images/5/5d/T--NYU_Abu_Dhabi--d1.png">
+<link rel="prefetch" href="https://2019.igem.org/wiki/images/4/48/T--NYU_Abu_Dhabi--d2.png">
+<link rel="prefetch" href="https://2019.igem.org/wiki/images/a/ad/T--NYU_Abu_Dhabi--d3.png">
+<link rel="prefetch" href="https://2019.igem.org/wiki/images/3/3d/T--NYU_Abu_Dhabi--d4.png">
+<link rel="prefetch" href="https://2019.igem.org/wiki/images/2/2b/T--NYU_Abu_Dhabi--d5.png">
+<link rel="prefetch" href="https://2019.igem.org/wiki/images/2/2c/T--NYU_Abu_Dhabi--d6.png">
 
-    <!-- End: JS DEPENDANCIES -->
+    <!-- End: DEPENDANCIES AND PRELOADING -->
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
         <!-- Start: IGEM MENU LINKS -->
         <!-- End: IGEM MENU LINKS -->
@@ -151,7 +145,7 @@ $(this).children("div").fadeIn(400);
 </div>
         </div>
         <!-- Start: HEADER_ANIMATIONS --><div  style="position:fixed;left: 0;
-right: 0;" id="productImage"><div class="text-center"><img id="productImageActual" src="assets/img/iphone.png" ><div id="pinTheProduct"></div></div></div>
+right: 0;" id="productImage"><div class="text-center"><img id="productImageActual" src="https://2019.igem.org/wiki/images/0/00/T--NYU_Abu_Dhabi--iphone.png" ><div id="pinTheProduct"></div></div></div>
 
 <script>
 	$(function () { // wait for document ready
@@ -168,13 +162,13 @@ right: 0;" id="productImage"><div class="text-center"><img id="productImageActua
         var tweenFadeOut = TweenMax.to("#productImage", 1000, {opacity:0});
         var tweenRotate = TweenMax.to("#productImageActual",0,{rotation:0});
         var images = [
-        "iphone.png",
-		"d2.png",
-		"d3.png",
-		"d4.png",
-		"d5.png",
-        "d6.png",
-            "d7.png"
+        "https://2019.igem.org/wiki/images/0/00/T--NYU_Abu_Dhabi--iphone.png",
+		"https://2019.igem.org/wiki/images/5/5d/T--NYU_Abu_Dhabi--d1.png",
+		"https://2019.igem.org/wiki/images/4/48/T--NYU_Abu_Dhabi--d2.png",
+		"https://2019.igem.org/wiki/images/a/ad/T--NYU_Abu_Dhabi--d3.png",
+		"https://2019.igem.org/wiki/images/3/3d/T--NYU_Abu_Dhabi--d4.png",
+        "https://2019.igem.org/wiki/images/2/2b/T--NYU_Abu_Dhabi--d5.png",
+            "https://2019.igem.org/wiki/images/2/2c/T--NYU_Abu_Dhabi--d6.png"
 	
 	];
 
@@ -3701,12 +3695,8 @@ HIVDanger = () => {
     <!-- End: SmoothWheel Integration -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="assets/js/new-age.js"></script>
-    <script src="assets/js/Right-Sidebar.js"></script>
-    <script src="assets/js/scrollSmooth.js"></script>
-    <script src="assets/js/Sidebar-Menu.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
