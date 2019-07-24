@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -17,8 +16,21 @@
 </head>
 
 <body id="page-top">
-    <!-- Start: DEPENDANCIES AND PRELOADING --><script
+    <!-- Start: *DEPENDANCIES AND PRELOADING --><script
   src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
+   <script>
+        $(document).ready(function() {
+
+            $.when($.get("https://2019.igem.org/Team:NYU_Abu_Dhabi/bootstrapcss?action=raw&ctype=text/css"))
+            .done(function(response) {
+                $('<style />').text(response).appendTo($('head'));
+            });
+            $.when($.get("https://2019.igem.org/Team:NYU_Abu_Dhabi/sampleStyles?action=raw&ctype=text/css"))
+            .done(function(response) {
+                $('<style />').text(response).appendTo($('head'));
+            });
+        })
+        </script>
 <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/TweenMax?action=raw&ctype=text/javascript"></script>
 <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/ScrollMagic?action=raw&ctype=text/javascript"></script>
 <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/AnimationGsap?action=raw&ctype=text/javascript"></script>
@@ -32,7 +44,7 @@
 <link rel="prefetch" href="https://2019.igem.org/wiki/images/2/2b/T--NYU_Abu_Dhabi--d5.png">
 <link rel="prefetch" href="https://2019.igem.org/wiki/images/2/2c/T--NYU_Abu_Dhabi--d6.png">
 
-    <!-- End: DEPENDANCIES AND PRELOADING -->
+    <!-- End: *DEPENDANCIES AND PRELOADING -->
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
         <!-- Start: IGEM MENU LINKS -->
         <!-- End: IGEM MENU LINKS -->
@@ -79,7 +91,7 @@
     </nav>
     <div class="scrollWheelWrapper"></div>
     <!-- Start: 2 Rows 1+1 Columns -->
-    <div id="fullProductHeader" class="d-none d-lg-block" style="background-color: #000000;background-image: url(&quot;assets/img/bg-pattern.png&quot;);height: 200%;">
+    <div id="fullProductHeader" class="d-none d-lg-block" style="background-color: #000000;background-image: url(&quot;https://2019.igem.org/wiki/images/f/f3/T--NYU_Abu_Dhabi--bg-pattern.png&quot;);height: 200vh;">
         <div id="headerTextVolatect">
             <div class="row">
                 <div class="col-md-12">
@@ -175,6 +187,8 @@ right: 0;" id="productImage"><div class="text-center"><img id="productImageActua
 	// TweenMax can tween any property of any object. We use this object to cycle through the array
 	var obj = {curImg: 0};
     var tweenHeaderFade = TweenMax.to("#headerTextVolatect", 100, {opacity:0,scale:0.95});
+    var tweenRemoveDisplay = TweenMax.to("#productImage", 1, {display:"none"});
+        //productImage
     
 	// create tween
 	var tweenBlast = TweenMax.to(obj, 1000,
@@ -190,7 +204,7 @@ right: 0;" id="productImage"><div class="text-center"><img id="productImageActua
 		}
 	);
 		// build scene
-        var timelineProductAnimation = new TimelineMax().add(tweenHeaderFade).add(tweenRotate).add(tweenMoveProduct).add(tweenBlast).add(tweenFadeOut);
+        var timelineProductAnimation = new TimelineMax().add(tweenHeaderFade).add(tweenRotate).add(tweenMoveProduct).add(tweenBlast).add(tweenFadeOut).add(tweenRemoveDisplay);
 		var scene2 = new ScrollMagic.Scene({ duration:"150%",offset:"0"})
         .setPin("#productImage")
         .setTween(timelineProductAnimation)
@@ -236,7 +250,7 @@ right: 0;" id="productImage"><div class="text-center"><img id="productImageActua
 </script>
     <!-- End: FadeOutHeaderCode -->
     <div id="fadeHeaderOut"></div>
-    <!-- Start: TargetGroupVideo --><div class="d-none d-lg-block" style="position:relative;background-color: #000000;background-image: url('assets/img/bg-pattern.png');height: 100%;">
+    <!-- Start: TargetGroupVideo --><div class="d-none d-lg-block" style="position:relative;background-color: #000000;background-image: url('https://2019.igem.org/wiki/images/f/f3/T--NYU_Abu_Dhabi--bg-pattern.png');height: 100%;">
     <style>
     #myVideo {
         position:relative;
@@ -404,7 +418,7 @@ right: 0;" id="productImage"><div class="text-center"><img id="productImageActua
     <!-- End: How does it work? -->
     <div></div>
     <!-- Start: Features Desktop -->
-    <div id="engineeringbio" class="d-none d-lg-block" style="background-color: white;background-image: url(&quot;assets/img/bg-pattern.png&quot;);height: 300%;width: 100%;"><div id="middleMarker"></div>
+    <div id="engineeringbio" class="d-none d-lg-block" style="background-color: white;background-image: url(&quot;https://2019.igem.org/wiki/images/f/f3/T--NYU_Abu_Dhabi--bg-pattern.png&quot;);height: 300vh;width: 100%;"><div id="middleMarker"></div>
 <div class="row " style="position:fixed;top:25%;width:100%;opacity:0;" id="featuresHeaderText">
    <div style="width:100%;" class="col w-100 text-center">
        <h1 style="color:white;font-size: 9vh;">State of the art Engineering and Biology</h1>
@@ -3450,21 +3464,48 @@ font-size: 1.5vh;
         <!-- Start: ScrollFeatures --><script>
     
 	$(function () { 
+        $("#featuresHeaderText").css("display", "none");
+        $("#middleFeatureContainer").css("display", "none");
+        $("#microfluidicsContainer").css("display", "none");
+        $("#webapiHolder").css("display", "none");
+        
         var controller4 = new ScrollMagic.Controller();
         var timelineFeatures = new TimelineMax()
         .add(TweenMax.to("#featuresHeaderText", 50, {opacity:1,top:"45%"}))
          .add(TweenMax.to("#featuresHeaderText", 50, {opacity:0,top:"35%"}),"q")
+        .add(TweenMax.to("#featuresHeaderText", 1, {display:"none"}))
         .add(TweenMax.to("#middleFeatureContainer", 50, {opacity:1,top:"35%"}),"q")
         .add(TweenMax.to("#middleFeatureContainer", 10, {opacity:0}))
+        .add(TweenMax.to("#middleFeatureContainer", 1, {display:"none"}))
         .add(TweenMax.to("#microfluidicsContainer", 50, {opacity:1,top:"30%"}))
         .add(TweenMax.to("#microfluidicsContainer", 10, {opacity:0}))
+        .add(TweenMax.to("#microfluidicsContainer", 1, {display:"none"}))
         .add(TweenMax.to("#webapiHolder", 50, {opacity:1,top:"30%"}))
-        .add(TweenMax.to("#webapiHolder", 10, {opacity:0}),"last")
+        .add(TweenMax.to("#webapiHolder", 10, {opacity:0,display:"none"}),"last")
+        .add(TweenMax.to("#webapiHolder", 1, {display:"none"}))
         
         //microfluidicsContainer webapiHolder
 		var sceneBack2 = new ScrollMagic.Scene({ duration:"300%",offset:0})
         .setTween(timelineFeatures)
         .triggerElement("#engineeringbio")
+        .on("start", () => {
+            $("#featuresHeaderText").css("display", "");
+        $("#middleFeatureContainer").css("display", "");
+        $("#microfluidicsContainer").css("display", "");
+        $("#webapiHolder").css("display", "");
+        })
+        .on("leave", () => {
+           $("#featuresHeaderText").css("display", "none");
+        $("#middleFeatureContainer").css("display", "none");
+        $("#microfluidicsContainer").css("display", "none");
+        $("#webapiHolder").css("display", "none");
+        })
+         .on("end", () => {
+           $("#featuresHeaderText").css("display", "none");
+        $("#middleFeatureContainer").css("display", "none");
+        $("#microfluidicsContainer").css("display", "none");
+        $("#webapiHolder").css("display", "none");
+        })
        //.setPin("body")
 						//.addIndicators({name: "engineering"}) // add indicators (requires plugin)
 						.addTo(controller4);
@@ -3693,10 +3734,11 @@ HIVDanger = () => {
 });
     </script>
     <!-- End: SmoothWheel Integration -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+   <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/bootstrapjs?action=raw&ctype=text/css"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/sampleScript?action=raw&ctype=text/javascript"></script>
+
 </body>
 
 </html>
