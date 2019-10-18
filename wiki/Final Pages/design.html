@@ -26,6 +26,9 @@
     font-size: -15.625rem;
     line-height: 2.5;
 }
+.nav-item {
+  color:black;
+}
 #exTab1 .tab-content {
   color : white;
   background-color: #428bca;
@@ -199,76 +202,88 @@ $(this).children("div").fadeIn(400);
 
     <!-- Start: Article Clean -->
 <div class="container">
-<section style="padding: 56px 0px;">
-        <img style="width:100%;" src="https://2019.igem.org/wiki/images/b/b4/T--NYU_Abu_Dhabi--tm3.jpg">
+<section style="padding: 65px 0px;">
+      <!--   <img style="width:100%;" src="https://2019.igem.org/wiki/images/b/b4/T--NYU_Abu_Dhabi--tm3.jpg"> -->
 
+<h1 style="font-family:avenir;">Design</h1>
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist" style="color:black;">
+          <a class="nav-item nav-link active" id="nav-motivation-tab" data-toggle="tab" href="#nav-motivation" role="tab" aria-controls="nav-home" aria-selected="true">Motivation</a>
+          <a class="nav-item nav-link" id="nav-prototyping-tab" data-toggle="tab" href="#nav-prototyping" role="tab" aria-controls="nav-prototyping" aria-selected="false">Prototyping</a>
+          <a class="nav-item nav-link" id="nav-lit-tab" data-toggle="tab" href="#nav-lit" role="tab" aria-controls="nav-lit" aria-selected="false">Literature Review</a>
+          <a class="nav-item nav-link" id="nav-market-tab" data-toggle="tab" href="#nav-market" role="tab" aria-controls="nav-market" aria-selected="false">Market Research</a>
+          <a class="nav-item nav-link" id="nav-sources-tab" data-toggle="tab" href="#nav-sources" role="tab" aria-controls="nav-sources" aria-selected="false">Sources</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <br/><br/><br/>
+        <div class="tab-pane fade show active" id="nav-motivation" role="tabpanel" aria-labelledby="nav-motivation-tab">
+          <p style="font-family:avenir;font-size:18px;">
+            We started the iGEM 2019 project with a significant legacy of high-achieving products and ample documentation. However, out first goal was to decide which direction to go for: improving the Point-Of-Care detection device from last year or going with something completely new? <br /><br />
+This year almost completely new team was unbiased regarding last year’s achievements and we were all eager to build something from basic the basic principles up, build a product that would stand on its own without the help of the institution we represent. It mattered a lot to us (and it still does) that our product was build on our common values and on our team cross-disciplinary understanding of public health issues. <br /><br />
+Our team consists of people from more than 15 countries and the philosophy of our school enables us to travel all over the world for various regional seminars and classes. Naturally, contagion was discussed to a full extent, along with bacterial resistance, synthetic biology and ricks of diminishing rates of vaccination. After many (and there indeed vast amounts) of exhaustive ideation sessions, Volatect was born. We knew we were going to build a device on the diagnostics track, but the new team’s focus would be steered towards travel clearance and not food safety like in previous years.<br /><br />
+We decided to not only submit a competition entry for iGEM, but to design an industry-standard certifiable product, hence our team became Volatect after that. <br /><br />
+In the first weeks of Volatect, we deemed it important to make the branding decisions since working for a logo and a name tends to be more conducive to productivity. Based on the work of Konecnik Ruzzier, Maja, and Mitja Ruzzier. "Startup branding funnel: A new approach for developing startup brands. “and Moser et al.’s work on startup attractiveness we settled with a minimalistic logo which would represent Volatect seamlessly. <br />
 
+          </p>
+        </div>
+        <div class="tab-pane fade" id="nav-prototyping" role="tabpanel" aria-labelledby="nav-prototyping-tab">
+  <p style="font-family:avenir;font-size:18px;">
+          If we were going to create a product that would be effective in preventing massive contagions through airports and emigration control, a significant amount of research on the market, technology development trends and existing devices was made. <br /><br />
+          After an exhaustive patent search both from European Union and the US Patent office we noticed that most of the patents regarding airport screening of diseases of the same scale of detail as our Volatect device mostly ruminated on communication protocols with third-party institutions rather than precise and tangible detection methods. This is where the idea of a Web API (link that take you to the WEB API) was proposed. We figured out that since we are gathering valuable data regarding thresholds and contagion networks, it would be only reasonable to design a proper system that facilitated the use of our data. The Computer science team went to work, and they used the Heroku PaaS (Platform as a service) to host the first 10 000 data entries for prototyping.
+</p>
+        </div>
+        <div class="tab-pane fade" id="nav-lit" role="tabpanel" aria-labelledby="nav-lit-tab">
+  <p style="font-family:avenir;font-size:18px;">
+The design outcomes were undoubtedly affected by our extensive literature review. Although the team knew what the goals were, the means to ticking all of them were still unclear. The review on key enabling technologies for point-of-care diagnostics by Primicieri et al. became a cornerstone of our endeavor. The use of in-field assays and integrated lab-on-a-chip technologies seemed to be a major trend. Furthermore, addressing environmental needs was also noticed in the reviewed works on the paper (refer to microfluidics membrane valves on page 14-15 and the Q3 device on page 16).
+<br /><br />
+<img src="https://2019.igem.org/wiki/images/thumb/c/c0/T--NYU_Abu_Dhabi--lit_image.png/595px-T--NYU_Abu_Dhabi--lit_image.png" class="img-fluid" /><br/><br/>
+Valves that served as inspiration when considering approaches.
+<img src="https://2019.igem.org/wiki/images/thumb/8/86/T--NYU_Abu_Dhabi--lit2.png/800px-T--NYU_Abu_Dhabi--lit2.png"  class="img-fluid" /><br/><br/>
+Complete reagent pre storage model, uses lab-on-a-foil system for nucleic acid detection. Served as an inspiration for implementing storage units in the part that would execute the analysis so that we minimized the number of small insertions of the microliter magnitude i.e multiple inlets that would lead to cross-contamination (refer to the 2018 NYUAD iGEM page to showcase how we are reflecting on last year’s mistakes)
+<br/><br/>
 
+From Primicieri et al.’s review we also learned that integrated technologies are a world-wide engineering trend and hence, we were very keen on developing a complex yet cheap and recyclable integrated lab-on-a-chip platform. Through the encouragement of Dr. Song (link to attributes), we set out to use 3M hydrophilic films as a means of improving the flow of the reagents. The engineering team however, had to settle with which lab-on-a-chip platform to go with.<br/><br/>
+<img src="https://2019.igem.org/wiki/images/thumb/a/aa/T--NYU_Abu_Dhabi--lit3.png/800px-T--NYU_Abu_Dhabi--lit3.png"  class="img-fluid" /><br/>Figure above shows the comparison of various approaches to microfluidics.
 
+  </p>
+        </div>
+        <div class="tab-pane fade" id="nav-market" role="tabpanel" aria-labelledby="nav-market-tab">
+      <p style="font-family:avenir;font-size:18px;">
+        The market research also helped us be more convinced on the advantages of integrated microfluidics. Papers from the institute of Integrated Circuits of the Johannes Kepler University (see Attributes) and the extensive documentation of Boston University HW team also convinced us on the versatility of the microfluidics approach over using cartridges. As of deciding which microfluidics approach to choose, we left that to further experimentation as explained in the notebook. <br /><br />
 
+It is worthy to mention that since our device was ready for the market, the perception of microfluidics and biotechnology mattered if the implementation was to be taken seriously and for the feedback collected from Integrated Human Practices team to be meaningful. We looked at Gartner’s (IT information and consulting company) 2019 guide on Hype Cycle for emerging technologies. The Hype Cycle which according to Alexander Linden on "Understanding Gartner’s hype cycles" provides “a snapshot of the relative maturity of technologies within a certain segment of the IT world” (page 5). The report clearly stated that the market’s support for integrated biotechnology is on the rise, meaning that Volatect is also properly timed and following a lucrative approach with microfluidics and integrated technology. <br />
+<img src="https://2019.igem.org/wiki/images/thumb/8/88/T--NYU_Abu_Dhabi--design_image.png/800px-T--NYU_Abu_Dhabi--design_image.png"  class="img-fluid" /><br/>
+<img src="https://2019.igem.org/wiki/images/thumb/d/d1/T--NYU_Abu_Dhabi--lit_image22.png/800px-T--NYU_Abu_Dhabi--lit_image22.png"  class="img-fluid" />
 
+      </p>
+        </div>
+
+        <div class="tab-pane fade" id="nav-sources" role="tabpanel" aria-labelledby="nav-sources-tab">
+        <p style="font-family:avenir;font-size:18px;">
+          Works Cited
+<br /><br />
+          Konecnik Ruzzier, Maja, and Mitja Ruzzier. "Startup branding funnel: A new approach for developing startup brands." (2015).
+<br /><br />
+          Linden, Alexander, and Jackie Fenn. "Understanding Gartner’s hype cycles." Strategic Analysis Report Nº R-20-1971. Gartner, Inc (2003).
+<br /><br />
+          Moser, Kilian, Andranik Tumasjan, and Isabell Melanie Welpe. "Small, but attractive: the effect of employer branding and legitimacy on startup attractiveness." Academy of Management Proceedings. Vol. 2015. No. 1. Briarcliff Manor, NY 10510: Academy of Management, 2015.
+<br /><br />
+          Primiceri Elisabetta, Maria Serena Chiriacò, Francesca M. Notarangelo, Antonio Crocamo, Diego Ardissino, Marco Cereda, Alessandro P. Bramanti, Marco A. Bianchessi, Gianluigi Giannelli, and Giuseppe Maruccio. "Key enabling technologies for point-of-care diagnostics." Sensors 18, no. 11 (2018): 3607.
+<br /><br />
+          Smith David, Burke Brian Hype Cycle for Emerging Technologies, Gartner Research 2019. <a href="https://www.gartner.com/en/documents/3956015/hype-cycle-for-emerging-technologies-2019" >https://www.gartner.com/en/documents/3956015/hype-cycle-for-emerging-technologies-2019</a>
+        </p>
+        </div>
+
+      </div>
 
         </p>
 
-</section></div>
+</section>
 
-<div class="container"><h2>Example tab 2 (using standard nav-tabs)</h2></div>
+</div>
 
-<div id="exTab2" class="container">
-<ul class="nav nav-tabs">
-			<li class="active">
-        <a  href="#1" data-toggle="tab">Overview</a>
-			</li>
-			<li><a href="#2" data-toggle="tab">Without clearfix</a>
-			</li>
-			<li><a href="#3" data-toggle="tab">Solution</a>
-			</li>
-		</ul>
 
-			<div class="tab-content ">
-			  <div class="tab-pane active" id="1">
-          <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
-				</div>
-				<div class="tab-pane" id="2">
-          <h3>Notice the gap between the content and tab after applying a background color</h3>
-				</div>
-        <div class="tab-pane" id="3">
-          <h3>add clearfix to tab-content (see the css)</h3>
-				</div>
-			</div>
-  </div>
-
-<hr></hr>
-
-<div class="container"><h2>Example 3 </h2></div>
-<div id="exTab3" class="container">
-<ul  class="nav nav-pills">
-			<li class="active">
-        <a  href="#1b" data-toggle="tab">Overview</a>
-			</li>
-			<li><a href="#2b" data-toggle="tab">Using nav-pills</a>
-			</li>
-			<li><a href="#3b" data-toggle="tab">Applying clearfix</a>
-			</li>
-  		<li><a href="#4a" data-toggle="tab">Background color</a>
-			</li>
-		</ul>
-
-			<div class="tab-content clearfix">
-			  <div class="tab-pane active" id="1b">
-          <h3>Same as example 1 but we have now styled the tab's corner</h3>
-				</div>
-				<div class="tab-pane" id="2b">
-          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
-				</div>
-        <div class="tab-pane" id="3b">
-          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
-				</div>
-          <div class="tab-pane" id="4b">
-          <h3>We use css to change the background color of the content to be equal to the tab</h3>
-				</div>
-			</div>
-  </div>
     <!-- End: Article Clean -->
     <!-- Start: 2 Rows 1+4 Columns -->
       <div id="footerContainer" style="background-color: white;color:black;">
