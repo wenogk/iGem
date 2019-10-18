@@ -1,0 +1,553 @@
+{{NYU_Abu_Dhabi/bootstrap.css}}
+{{NYU_Abu_Dhabi/sampleStyles.css}}
+<html>
+<style>
+#home_logo, #sideMenu { display:none; }
+#sideMenu, #top_title, .patrollink  {display:none;}
+#content { margin-left:0px; margin-top:-30px; padding:0px; width:100%;}
+</style>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Volatect</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+<style>
+.text-content {
+   font-size: 22px;
+    font-size: -15.625rem;
+    line-height: 2.5;
+}
+</style>
+<style>
+
+  .timeline {
+      list-style: none;
+      padding: 20px 0 20px;
+      position: relative;
+  }
+
+      .timeline:before {
+          top: 0;
+          bottom: 0;
+          position: absolute;
+          content: " ";
+          width: 3px;
+          background-color: #eeeeee;
+          left: 50%;
+          margin-left: -1.5px;
+      }
+
+      .timeline > li {
+          margin-bottom: 20px;
+          position: relative;
+      }
+
+          .timeline > li:before,
+          .timeline > li:after {
+              content: " ";
+              display: table;
+          }
+
+          .timeline > li:after {
+              clear: both;
+          }
+
+          .timeline > li:before,
+          .timeline > li:after {
+              content: " ";
+              display: table;
+          }
+
+          .timeline > li:after {
+              clear: both;
+          }
+
+          .timeline > li > .timeline-panel {
+              width: 46%;
+              float: left;
+              border: 1px solid #d4d4d4;
+              border-radius: 2px;
+              padding: 20px;
+              position: relative;
+              -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+              box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+          }
+
+              .timeline > li > .timeline-panel:before {
+                  position: absolute;
+                  top: 26px;
+                  right: -15px;
+                  display: inline-block;
+                  border-top: 15px solid transparent;
+                  border-left: 15px solid #ccc;
+                  border-right: 0 solid #ccc;
+                  border-bottom: 15px solid transparent;
+                  content: " ";
+              }
+
+              .timeline > li > .timeline-panel:after {
+                  position: absolute;
+                  top: 27px;
+                  right: -14px;
+                  display: inline-block;
+                  border-top: 14px solid transparent;
+                  border-left: 14px solid #fff;
+                  border-right: 0 solid #fff;
+                  border-bottom: 14px solid transparent;
+                  content: " ";
+              }
+
+          .timeline > li > .timeline-badge {
+              color: #fff;
+              width: 50px;
+              height: 50px;
+              line-height: 50px;
+              font-size: 1.4em;
+              text-align: center;
+              position: absolute;
+              top: 16px;
+              left: 50%;
+              margin-left: -25px;
+              background-color: #999999;
+              z-index: 100;
+              border-top-right-radius: 50%;
+              border-top-left-radius: 50%;
+              border-bottom-right-radius: 50%;
+              border-bottom-left-radius: 50%;
+          }
+
+          .timeline > li.timeline-inverted > .timeline-panel {
+              float: right;
+          }
+
+              .timeline > li.timeline-inverted > .timeline-panel:before {
+                  border-left-width: 0;
+                  border-right-width: 15px;
+                  left: -15px;
+                  right: auto;
+              }
+
+              .timeline > li.timeline-inverted > .timeline-panel:after {
+                  border-left-width: 0;
+                  border-right-width: 14px;
+                  left: -14px;
+                  right: auto;
+              }
+
+  .timeline-badge.primary {
+      background-color: #2e6da4 !important;
+  }
+
+  .timeline-badge.success {
+      background-color: #3f903f !important;
+  }
+
+  .timeline-badge.warning {
+      background-color: #f0ad4e !important;
+  }
+
+  .timeline-badge.danger {
+      background-color: #d9534f !important;
+  }
+
+  .timeline-badge.info {
+      background-color: #5bc0de !important;
+  }
+
+  .timeline-title {
+      margin-top: 0;
+      color: inherit;
+  }
+
+  .timeline-body > p,
+  .timeline-body > ul {
+      margin-bottom: 0;
+  }
+
+      .timeline-body > p + p {
+          margin-top: 5px;
+      }
+
+  @media (max-width: 767px) {
+      ul.timeline:before {
+          left: 40px;
+      }
+
+      ul.timeline > li > .timeline-panel {
+          width: calc(100% - 90px);
+          width: -moz-calc(100% - 90px);
+          width: -webkit-calc(100% - 90px);
+      }
+
+      ul.timeline > li > .timeline-badge {
+          left: 15px;
+          margin-left: 0;
+          top: 16px;
+      }
+
+      ul.timeline > li > .timeline-panel {
+          float: right;
+      }
+
+          ul.timeline > li > .timeline-panel:before {
+              border-left-width: 0;
+              border-right-width: 15px;
+              left: -15px;
+              right: auto;
+          }
+
+          ul.timeline > li > .timeline-panel:after {
+              border-left-width: 0;
+              border-right-width: 14px;
+              left: -14px;
+              right: auto;
+          }
+  }
+
+  </style>
+</head>
+
+<body style="position:relative;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top otherPages" style="top:10px;" id="mainNav">
+        <div class="container"><img src="https://2019.igem.org/wiki/images/7/7c/T--NYU_Abu_Dhabi--logoBlack.png" class = "img-fluid" style="width:21px;padding-right:5px;" ><a class="navbar-brand js-scroll-trigger" href="https://2019.igem.org/Team:NYU_Abu_Dhabi">Volatect</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="z-index: 9999;">
+                <ul class="nav navbar-nav ml-auto">
+
+
+                    <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="navbarDropdown" href="#yolo" style="height: 100%;" role="button" aria-haspopup="true">Description&nbsp;</a>
+                        <div class="dropdown-menu js-scroll-trigger" role="menu"
+                            aria-labelledby="navbarDropdown">
+                             <a class="dropdown-item" role="presentation" href="description.html">Description</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Software">Software</a><a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Hardware">Hardware</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
+                        </div>
+                    </li>
+
+
+                     <li class="nav-item" role="presentation"><a class="nav-link" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Awards">Awards</a></li>
+
+                    <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#yolo" style="height: 100%;" role="presentation">Process&nbsp;</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Experiments">Experiments</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Notebook">Notebook</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Results">Results&nbsp;</a>
+                           <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Design">Design</a>
+                            <a
+                                    class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
+                                </div>
+                    </li>
+
+
+                     <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#yolo" style="height: 100%;" role="presentation">Engagement&nbsp;</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Collaborations">Collaborations</a>
+                           <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Human Practices</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Integrated Human</a><a class="dropdown-item" role="presentation"
+                                href="public-engagement.html">Public Engagement</a>
+                            </div>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="navbarDropdown" href="#yolo" style="height: 100%;" role="button" aria-haspopup="true">About&nbsp;</a>
+                        <div class="dropdown-menu js-scroll-trigger" role="menu"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Mission">Mission Statement</a>
+                             <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
+                            <a
+                                class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Nyuad-iGem">NYUAD iGem</a>
+                                <a
+                                class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Beyond-iGem">Beyond iGem</a>
+                        </div>
+
+                    </li>
+
+                     <li style="display:none" class="nav-item" role="presentation"><a class="nav-link" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a></li>
+                    <li style="display:none" class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="human-practices.html">HUMAN</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="human-practices.html">Human Practices</a>
+                            <a class="dropdown-item" role="presentation" href="integrated-humans.html">Integrated Human</a><a class="dropdown-item" role="presentation"
+                                href="public-engagement.html">Public Engagement</a></div>
+                    </li>
+
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/VolatectAPI">WEB API</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+        </div>
+    </nav>
+    <script
+  src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
+<script src="
+ https://2019.igem.org/Team:NYU_Abu_Dhabi/TweenMax?action=raw&ctype=text/javascript"></script>
+<script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/bootstrapjs?action=raw&ctype=text/javascript"></script>
+<script src="
+https://2019.igem.org/Team:NYU_Abu_Dhabi/ScrollMagic?action=raw&ctype=text/javascript"></script>
+
+<script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/IndicatorDebug?action=raw&ctype=text/javascript"></script>
+<style>
+    @media only screen and (max-width: 760px) {
+  #mobileChecker { display: none; }
+    }</style>
+
+<div id="mobileChecker"></div>
+
+<script>
+$( document ).ready(function() {
+    var isHovered=false;
+    $( ".nav-item.dropdown" ).each(function(){
+
+        $( this ).hover(function(){
+
+$(this).children("div").fadeIn(400);
+        // $(this).children("div").addClass("show");
+                              console.log(isHovered);
+    }, function(){
+                              console.log(isHovered);
+                              if(!$(this).children("div").is(":hover")){
+            $(this).children("div").fadeOut(50);
+                              }
+                             } )
+                          });
+    $(".nav-item.dropdown").children( ".dropdown-menu" ).each(function(){
+        $(this).hover(function(){
+            isHovered=true;
+
+        }, function() {
+            isHovered=false;
+        });
+    });
+    /*
+    $(".nav-item.dropdown").children( ".dropdown-menu" ).each(function(){
+                          $( this ).mouseleave( function(){$(this).removeClass("show");} )
+                          });
+    */
+
+    var is_mobile = false;
+
+    if( $('#mobileChecker').css('display')=='none') {
+        is_mobile = true;
+    }
+
+    // now i can use is_mobile to run javascript conditionally
+
+    if (is_mobile == true) {
+        /**/
+        $(".dropdown-menu").each(function () {
+           // $(this).addClass("show")
+        });
+    }
+ });
+</script>
+</div>
+    </nav>
+
+    <!-- Start: Article Clean -->
+
+
+    <div class="container">
+        <div class="page-header">
+            <h1 id="timeline">Timeline</h1>
+        </div>
+        <ul class="timeline">
+            <li>
+              <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                </div>
+                <div class="timeline-body">
+                  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                  <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                  <hr>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                      <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+        </div>
+    </div>
+    <!-- End: Article Clean -->
+    <!-- Start: 2 Rows 1+4 Columns -->
+      <div id="footerContainer" style="background-color: white;color:black;">
+        <!-- Start: HeartAnimation -->
+<script>
+
+    $(function () {
+        var controller5 = new ScrollMagic.Controller();
+
+        var rotateHeart = new TimelineMax()
+        .add(TweenMax.to("#heart_icon", 50, {rotation:180}),"up")
+        .add(TweenMax.to("#heart_icon", 50, {y:-100}),"up")
+        .add(TweenMax.to("#heart_icon", 50, {rotation:360}),"down")
+        .add(TweenMax.to("#heart_icon", 50, {y:0}),"down")
+
+        //microfluidicsContainer webapiHolder
+        var sceneHeart = new ScrollMagic.Scene({ duration:"100px",offset:"50px"})
+        //.setTween(rotateHeart)
+        .triggerElement("#socialContainer")
+       //.setPin("#middleFeatureContainer")
+                        //.addIndicators({name: "heart"})
+                        .addTo(controller5)
+        .on("start", ()=> {
+            var rotateHeart = new TimelineMax()
+        .add(TweenMax.to("#heart_icon", 1, {y:-30}),"up")
+        .add(TweenMax.to("#heart_icon", 1, {rotation:360,y:0}),"down")
+        });
+    });
+
+
+</script>
+        <!-- End: HeartAnimation -->
+        <div class="container" style="padding: 7px;background-color: white; color:black;">
+            <style>
+
+.sponsor-logo {
+    max-height:100px;
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .1s ease-in-out;
+
+    }
+
+    .sponsor-logo:hover {
+        max-height:100px;
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+
+
+    }
+    .mobile-space {
+        height:55px;
+    }
+        </style>
+
+            <div class="row d-xl-flex justify-content-xl-center text-center" style="background-color: white; color:black;">
+                <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/1/1f/T--NYU_Abu_Dhabi--PromegaLogo.jpeg/800px-T--NYU_Abu_Dhabi--PromegaLogo.jpeg"></div>
+                <div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/f/f2/T--NYU_Abu_Dhabi--MathworksLogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/3/34/T--NYU_Abu_Dhabi--IDTlogo.png/800px-T--NYU_Abu_Dhabi--IDTlogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/6/69/T--NYU_Abu_Dhabi--TwistLogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/e/e4/T--NYU_Abu_Dhabi--NYUAD-LOGO.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/a/a5/T--NYU_Abu_Dhabi--NYU-logo.png/800px-T--NYU_Abu_Dhabi--NYU-logo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End: 2 Rows 1+4 Columns -->
+    <footer style="background:white;color:black;">
+        <div class="container">
+            <p>©&nbsp;Volatect 2019. All Rights Reserved.</p>
+            <ul class="list-inline" style="background:white;color:black;">
+                <li class="list-inline-item"><a href="#" style="background:white;color:black;">Privacy</a></li>
+                <li class="list-inline-item"><a href="#" style="background:white;color:black;">Terms</a></li>
+                <li class="list-inline-item"><a href="#"  style="background:white;color:black;">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/bootstrapjs?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/sampleScript?action=raw&ctype=text/javascript"></script>
+</body>
+
+</html>
