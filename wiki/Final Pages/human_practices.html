@@ -1,0 +1,689 @@
+{{NYU_Abu_Dhabi/bootstrap.css}}
+{{NYU_Abu_Dhabi/sampleStyles.css}}
+<html>
+<style>
+#home_logo, #sideMenu { display:none; }
+#sideMenu, #top_title, .patrollink  {display:none;}
+#content { margin-left:0px; margin-top:-30px; padding:0px; width:100%;}
+</style>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Volatect</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+<style>
+.text-content {
+   font-size: 22px;
+    font-size: -15.625rem;
+    line-height: 2.5;
+}
+</style>
+<style>
+
+  .timeline {
+      list-style: none;
+      padding: 20px 0 20px;
+      position: relative;
+  }
+
+      .timeline:before {
+          top: 0;
+          bottom: 0;
+          position: absolute;
+          content: " ";
+          width: 3px;
+          background-color: #eeeeee;
+          left: 50%;
+          margin-left: -1.5px;
+      }
+
+      .timeline > li {
+          margin-bottom: 20px;
+          position: relative;
+      }
+
+          .timeline > li:before,
+          .timeline > li:after {
+              content: " ";
+              display: table;
+          }
+
+          .timeline > li:after {
+              clear: both;
+          }
+
+          .timeline > li:before,
+          .timeline > li:after {
+              content: " ";
+              display: table;
+          }
+
+          .timeline > li:after {
+              clear: both;
+          }
+
+          .timeline > li > .timeline-panel {
+              width: 46%;
+              float: left;
+              border: 1px solid #d4d4d4;
+              border-radius: 2px;
+              padding: 20px;
+              position: relative;
+              -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+              box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+          }
+
+              .timeline > li > .timeline-panel:before {
+                  position: absolute;
+                  top: 26px;
+                  right: -15px;
+                  display: inline-block;
+                  border-top: 15px solid transparent;
+                  border-left: 15px solid #ccc;
+                  border-right: 0 solid #ccc;
+                  border-bottom: 15px solid transparent;
+                  content: " ";
+              }
+
+              .timeline > li > .timeline-panel:after {
+                  position: absolute;
+                  top: 27px;
+                  right: -14px;
+                  display: inline-block;
+                  border-top: 14px solid transparent;
+                  border-left: 14px solid #fff;
+                  border-right: 0 solid #fff;
+                  border-bottom: 14px solid transparent;
+                  content: " ";
+              }
+
+          .timeline > li > .timeline-badge {
+              color: #fff;
+              width: 50px;
+              height: 50px;
+              line-height: 50px;
+              font-size: 1.4em;
+              text-align: center;
+              position: absolute;
+              top: 16px;
+              left: 50%;
+              margin-left: -25px;
+              background-color: white;
+              z-index: 100;
+              border-top-right-radius: 50%;
+              border-top-left-radius: 50%;
+              border-bottom-right-radius: 50%;
+              border-bottom-left-radius: 50%;
+
+          }
+
+          .timeline > li.timeline-inverted > .timeline-panel {
+              float: right;
+          }
+
+              .timeline > li.timeline-inverted > .timeline-panel:before {
+                  border-left-width: 0;
+                  border-right-width: 15px;
+                  left: -15px;
+                  right: auto;
+              }
+
+              .timeline > li.timeline-inverted > .timeline-panel:after {
+                  border-left-width: 0;
+                  border-right-width: 14px;
+                  left: -14px;
+                  right: auto;
+              }
+
+  .timeline-badge.primary {
+      background-color: #2e6da4 !important;
+  }
+
+  .timeline-badge.success {
+      background-color: #3f903f !important;
+  }
+
+  .timeline-badge.warning {
+      background-color: #f0ad4e !important;
+  }
+
+  .timeline-badge.danger {
+      background-color: #d9534f !important;
+  }
+
+  .timeline-badge.info {
+      background-color: #5bc0de !important;
+  }
+
+  .timeline-title {
+      margin-top: 0;
+      color: inherit;
+  }
+
+  .timeline-body > p,
+  .timeline-body > ul {
+      margin-bottom: 0;
+  }
+
+      .timeline-body > p + p {
+          margin-top: 5px;
+      }
+
+  @media (max-width: 767px) {
+      ul.timeline:before {
+          left: 40px;
+      }
+
+      ul.timeline > li > .timeline-panel {
+          width: calc(100% - 90px);
+          width: -moz-calc(100% - 90px);
+          width: -webkit-calc(100% - 90px);
+      }
+
+      ul.timeline > li > .timeline-badge {
+          left: 15px;
+          margin-left: 0;
+          top: 16px;
+      }
+
+      ul.timeline > li > .timeline-panel {
+          float: right;
+      }
+
+          ul.timeline > li > .timeline-panel:before {
+              border-left-width: 0;
+              border-right-width: 15px;
+              left: -15px;
+              right: auto;
+          }
+
+          ul.timeline > li > .timeline-panel:after {
+              border-left-width: 0;
+              border-right-width: 14px;
+              left: -14px;
+              right: auto;
+          }
+  }
+
+  </style>
+</head>
+
+<body style="position:relative;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top otherPages" style="top:10px;" id="mainNav">
+        <div class="container"><img src="https://2019.igem.org/wiki/images/7/7c/T--NYU_Abu_Dhabi--logoBlack.png" class = "img-fluid" style="width:21px;padding-right:5px;" ><a class="navbar-brand js-scroll-trigger" href="https://2019.igem.org/Team:NYU_Abu_Dhabi">Volatect</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="z-index: 9999;">
+                <ul class="nav navbar-nav ml-auto">
+
+
+                    <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="navbarDropdown" href="#yolo" style="height: 100%;" role="button" aria-haspopup="true">Description&nbsp;</a>
+                        <div class="dropdown-menu js-scroll-trigger" role="menu"
+                            aria-labelledby="navbarDropdown">
+                             <a class="dropdown-item" role="presentation" href="description.html">Description</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Software">Software</a><a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Hardware">Hardware</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
+                        </div>
+                    </li>
+
+
+                     <li class="nav-item" role="presentation"><a class="nav-link" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Awards">Awards</a></li>
+
+                    <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#yolo" style="height: 100%;" role="presentation">Process&nbsp;</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Experiments">Experiments</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Notebook">Notebook</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Results">Results&nbsp;</a>
+                           <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Design">Design</a>
+                            <a
+                                    class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
+                                </div>
+                    </li>
+
+
+                     <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#yolo" style="height: 100%;" role="presentation">Engagement&nbsp;</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Collaborations">Collaborations</a>
+                           <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Human Practices</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Integrated Human</a><a class="dropdown-item" role="presentation"
+                                href="public-engagement.html">Public Engagement</a>
+                            </div>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="navbarDropdown" href="#yolo" style="height: 100%;" role="button" aria-haspopup="true">About&nbsp;</a>
+                        <div class="dropdown-menu js-scroll-trigger" role="menu"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Mission">Mission Statement</a>
+                             <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
+                            <a
+                                class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Nyuad-iGem">NYUAD iGem</a>
+                                <a
+                                class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Beyond-iGem">Beyond iGem</a>
+                        </div>
+
+                    </li>
+
+                     <li style="display:none" class="nav-item" role="presentation"><a class="nav-link" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a></li>
+                    <li style="display:none" class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="human-practices.html">HUMAN</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="human-practices.html">Human Practices</a>
+                            <a class="dropdown-item" role="presentation" href="integrated-humans.html">Integrated Human</a><a class="dropdown-item" role="presentation"
+                                href="public-engagement.html">Public Engagement</a></div>
+                    </li>
+
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/VolatectAPI">WEB API</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+        </div>
+    </nav>
+    <script
+  src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
+<script src="
+ https://2019.igem.org/Team:NYU_Abu_Dhabi/TweenMax?action=raw&ctype=text/javascript"></script>
+<script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/bootstrapjs?action=raw&ctype=text/javascript"></script>
+<script src="
+https://2019.igem.org/Team:NYU_Abu_Dhabi/ScrollMagic?action=raw&ctype=text/javascript"></script>
+
+<script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/IndicatorDebug?action=raw&ctype=text/javascript"></script>
+<style>
+    @media only screen and (max-width: 760px) {
+  #mobileChecker { display: none; }
+    }</style>
+
+<div id="mobileChecker"></div>
+
+<script>
+$( document ).ready(function() {
+    var isHovered=false;
+    $( ".nav-item.dropdown" ).each(function(){
+
+        $( this ).hover(function(){
+
+$(this).children("div").fadeIn(400);
+        // $(this).children("div").addClass("show");
+                              console.log(isHovered);
+    }, function(){
+                              console.log(isHovered);
+                              if(!$(this).children("div").is(":hover")){
+            $(this).children("div").fadeOut(50);
+                              }
+                             } )
+                          });
+    $(".nav-item.dropdown").children( ".dropdown-menu" ).each(function(){
+        $(this).hover(function(){
+            isHovered=true;
+
+        }, function() {
+            isHovered=false;
+        });
+    });
+    /*
+    $(".nav-item.dropdown").children( ".dropdown-menu" ).each(function(){
+                          $( this ).mouseleave( function(){$(this).removeClass("show");} )
+                          });
+    */
+
+    var is_mobile = false;
+
+    if( $('#mobileChecker').css('display')=='none') {
+        is_mobile = true;
+    }
+
+    // now i can use is_mobile to run javascript conditionally
+
+    if (is_mobile == true) {
+        /**/
+        $(".dropdown-menu").each(function () {
+           // $(this).addClass("show")
+        });
+    }
+ });
+</script>
+</div>
+    </nav>
+
+    <!-- Start: Article Clean -->
+
+    <section style="padding: 56px 0px;">
+          <!-- Start: dh-row-text-image-right -->
+          <div class="row clearmargin clearpadding row-image-txt">
+              <div class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6"><img style="width:100%;" src="https://2019.igem.org/wiki/images/b/b4/T--NYU_Abu_Dhabi--tm3.jpg"></div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6" style="padding:20px;">
+                  <h1 class="text-center" style="font-family: Catamaran !important;">Integrated Human Practices</h1>
+                  <hr>
+                  <p class="textContent" style="font-size:1.2vw;font-family: Catamaran !important;" >After we decided as a team to tackle the issue of disease outbreaks that were common over the past decades, we sought to ensure our project can be appropriately and smoothly integrated into our targeted areas, including airports and visa screening locations. To ensure the accessibility of our project and expand its reach, we communicated with physicians, scientists, nurses, and administrators from various countries to obtain their opinion, which we incorporated into the final design of our device. Our integrated human practices team approached all our target markets and spoke to all those who can potentially benefit from our project, in order for Volatect to solve the challenge of preventing outbreaks in the global community.</p>
+              </div>
+          </div>
+          <!-- End: dh-row-text-image-right -->
+      </section>
+
+    <div class="container">
+        <div class="page-header">
+
+        </div>
+        <ul class="timeline">
+            <li>
+              <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/0/0e/T--NYU_Abu_Dhabi--UAEFLAG.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:right;">June 2019</h6>
+                  <h4 class="timeline-title">Talking to Wael</h4>
+                  <p class="text-muted">Location: New York University Abu Dhabi</p>
+                </div>
+                <div class="timeline-body">
+                  <p style="">While deciding whether to settle on the DETECTR protocol, we spoke to Wael Said Abdrabou from the Idaghdour Lab at NYU Abu Dhabi. We discussed the feasibility of our project and why the use of both RPA and CRISPR simultaneously was important for sufficient fluorescence and specificity.  Wael also explained how we can select appropriate primers that can help amplify the required regions with minimal unspecific amplification. He also elucidated the process of designing gRNA that were highly specific to our genes with low WHAT for the CRISPR-Cas12a system to function optimally. Wael also offered us advice on how to select genes that were unique to the strains we selected.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/0/0e/T--NYU_Abu_Dhabi--UAEFLAG.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:left;">June 2019</h6>
+                  <h4 class="timeline-title">Talking to Dr. Alatoom</h4>
+                  <p class="text-muted">Location: Cleveland Clinic Abu Dhabi</p>
+                </div>
+                <div class="timeline-body">
+                  <p>To discuss the biological and user-friendly aspects of our project, we scheduled a meeting with Dr. Adnan Alatoom, a pathologist at Cleveland Clinic Abu Dhabi, one of the largest and busiest hospitals in the city.<br /><br />
+
+With regards to the design of the project, Dr. Alatoom explained that point-of-care devices are not usually used in hospitals due to issues such as contamination and assay leakage. He advised us to create a closed system that is immune to leakage, which the engineering team implementing into the structure of the device that prevents the exposure of samples to open air.  <br /><br />
+
+When we asked about the best medium to use for testing, he advised us to use saliva samples, since saliva has almost no inhibitors, which will allow the reaction to occur smoothly.<br /><br />
+
+Dr. Alatoom also stressed the importance of high sensitivity and specificity of the method. The method we employ in our device, DETECTR, exhibits attomolar (10-18) sensitivity, and high specificity such that it can differentiate between two similar HPV strains (with a difference of 6 nucleotides). Following his advice to compare it with current methods used (PCR), we compared PCR sensitivity with RPA sensitivity for each of the four genes we experimented with.<br /><br />
+
+Dr. Alatoom also alerted us to the likelihood of finding the target in saliva, which may be difficult at times, and may not have been previously investigated/quantified. Hence, we searched for the Minimal Infective Dose (MID) for each of our strains and created broth dilutions, taking these numbers into account, to emulate real-life conditions. <br /><br />
+
+When asked about his opinion on the diseases we are targeting (Tuberculosis, Plague, Whooping Cough), he expressed his approval of each, but emphasized that this must be depended on the conditions of the country of arrival. As a result, we decided to make our device customizable, such that users can easily insert any reagent (gRNA, RPA primers) required to test any disease of interest. For instance, if a country fears an outbreak of Typhoid Fever (caused by Salmonella typhi), the plasmid can easily be edited with a unique portion of the Salmonella typhi’s gene, and the user can insert new RPA primers and guide RNAs related to this gene into the device.
+</p>
+                </div>
+              </div>
+            </li>
+            <li>
+            <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/1/1c/T--NYU_Abu_Dhabi--AustraliaFlag.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:right;">July 2019</h6>
+                  <h4 class="timeline-title">Talking to Wael</h4>
+                  <p class="text-muted">Location: New York University Abu Dhabi</p>
+                </div>
+                <div class="timeline-body">
+                  <p>While deciding whether to settle on the DETECTR protocol, we spoke to Wael Said Abdrabou from the Idaghdour Lab at NYU Abu Dhabi. We discussed the feasibility of our project and why the use of both RPA and CRISPR simultaneously was important for sufficient fluorescence and specificity.  Wael also explained how we can select appropriate primers that can help amplify the required regions with minimal unspecific amplification. He also elucidated the process of designing gRNA that were highly specific to our genes with low WHAT for the CRISPR-Cas12a system to function optimally. Wael also offered us advice on how to select genes that were unique to the strains we selected.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/1/1c/T--NYU_Abu_Dhabi--AustraliaFlag.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:left;">August 2019</h6>
+                  <h4 class="timeline-title">Meeting Professor Damian FJ Purcell</h4>
+                  <p class="text-muted">Location: Melbourne, Australia</p>
+                </div>
+                <div class="timeline-body">
+                  <p>To obtain a second opinion on our targeted pathogens and diseases, a member of our team also interviewed Dr. Purcell, Professor of Virology at the Peter Doherty Institute for Infection and Immunity of the University of Melbourne. <br /><br />
+We asked Dr. Purcell about which diseases he envisions must be tested, especially in the context of Australian travel checkpoints. He advised us to also include some viruses in our device to increase its diagnosis potential rather than simply focus on bacterial diseases. In response to his suggestions, we incorporated Hepatitis B virus detection into our device.
+</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+            <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/6/6b/T--NYU_Abu_Dhabi--albania_flag.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:left;">August 2019</h6>
+                  <h4 class="timeline-title">Talking to Asc. Prof Iliriana Zekja from the Albania airport</h4>
+                  <p class="text-muted">Location: Tirana, Albania</p>
+                </div>
+                <div class="timeline-body">
+                  <p>After we finalized our techniques and targeted diseases, a member of our team contacted Dr. Iliriana Zekja, Associate Professor in Tirana University Hospital Center and a consultant who worked closely with medical screening at the Tirana International Airport in Albania. Our objective was to explore how our device can be incorporated into airports and how the testing process can potentially be executed. <br/><br/>
+Dr. Zekja stated that like many airports today, Tirana International has a health check unit approved by the WHO. Currently, the process involves taking the sample into external laboratories and tested, with results being ready only after 24 hours. Therefore, they believed our device, which takes only 1 hour to accurately detect the pathogens’ presence, are very useful and efficient. She also mentioned that point-of-care devices have gained increasing popularity as a primary selection method. <br/><br/>
+The contact corroborated our idea of creating a customizable device, as he thought it is necessary to alter what diseases it can test based on evolving worldwide outbreaks and region-based risks.  <br/><br/>
+In addition to being time proof, he stressed that the device should be easy to use by the employees. In response, the engineering team ensured that the device required minimal training to be used, such that the user only has to insert the sample collector and the chip into the larger device. These features will allow officers/security personnel to easily run the test, which saves the need to hire professional nurses or overwhelm clinics.
+The contact also mentioned that due to the large influx of passengers at airports, the device must be able to test an average of 200 passengers per plane prior to boarding. Since our device could not test people up to the given capacity at that point, we devised a method by which our device can be utilized efficiently. Most passengers will not be infected, and therefore, we decided it is inefficient to test every passenger, which requires much more cost and resources. Instead, we devised a plan whereby passengers would first be screened using thermal cameras (available in several airports, including Tirana International) after which those suspected would be tested using our device. Also, Volatect is scalable, such that we can increase the machine size to account for more testing chips. This will significantly reduce the number of tests required in the fast-paced and crowded environment of the airport. In a visa screening center, the volume of patients may not be an issue, as the flow in the centers is slower, with many centers utilizing an appointment system where a limited number of visa applicants are screened at once.
+</p>
+                </div>
+              </div>
+            </li>
+            <li>
+            <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/c/cb/T--NYU_Abu_Dhabi--turkey_flag.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:right;">September 2019</h6>
+                  <h4 class="timeline-title">Email Istanbul airport </h4>
+                  <p class="text-muted">Location: Istanbul, Turkey</p>
+                </div>
+                <div class="timeline-body">
+                  <p>To gain a new perspective from another airport at a different location, we contacted Dr. Oktay BEKDİK, a flight physician at Istanbul International Airport. <br /><br />
+
+When asked about the waiting time, Dr. Bekdik, expressed that he believes passenger would ask for minimal waiting time. To account for this in an airport setting, the team considered the option of implementing the device and testing at the check in counters, another counter adjacent to them, as long as passengers can encounter it when they first enter the airport. Due to the minimum waiting time between the check-in process and flight boarding, which takes a minimum of 50 minutes, the time required for the results of our device should not be an issue.
+ <br /><br />
+With regards to the diseases he prefers to test for using the device, Dr. Bekdik expressed a strong preference for testing respiratory diseases, which we focused on in the creation of our device.
+ <br /><br />
+We also asked Dr. Bekdik about why testing was particularly important at airports as opposed to other locations, and he stated that it is important for public health. Additionally, it would save astronomical costs on the hospitals and the government, since prevention is significantly cheaper than treatment.
+ <br /><br />
+Finally, Dr. Bekdik stated that he prefers the device to cater for the endemic diseases affecting his country, Turkey, and that the device can be easily altered to accomplish this. Our device, which merely requires the addition of new guide RNA and primer mixes that can be easily and rapidly designed, matches his preferences and addresses his concern.
+</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/0/0e/T--NYU_Abu_Dhabi--UAEFLAG.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:left;">September 2019</h6>
+                  <h4 class="timeline-title">Talking to Mr. Zoltan Derzsi</h4>
+                  <p class="text-muted">Location: New York University Abu Dhabi</p>
+                </div>
+                <div class="timeline-body">
+                  <p>When the pathogen is detected and the CRISPR enzymes cut the FQ quencher to release fluorescence, this needs to be accurately detected by the sensors in the chip. Mr. Derzsi pointed us in the right direction regarding which sensors to use (including where to obtain them) to detect even a small amount of fluorescence.<br /><br />
+
+Mr Derzsi provided us with 3 methods to detect</p>
+<ol>
+  <li>Detection using filters (dichroic filters) and photodiodes</li>
+  <li>Using time-dependent fluorescence</li>
+  <li>Detection based on lux changes</li>
+</ol><p>
+We selected the third method, as it requires no filters which is very time-consuming to assemble.
+</p>
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/0/0e/T--NYU_Abu_Dhabi--UAEFLAG.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:right;">September 2019</h6>
+                  <h4 class="timeline-title">Visiting a visa screening center</h4>
+                  <p class="text-muted">Location: Abu Dhabi, UAE</p>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    In order to complete our annual health screening for visa verification, a few team members visited a visa screening center in Abu Dhabi, which is also a target location for our diagnostic device.<br /><br />
+
+                    Currently, testing for Tuberculosis, one of our target diseases, is done through a chest X-ray, which involves an exposure to radiation, as opposed to our more non-invasive procedure.  Moreover, the test for Hepatitis B is done through a blood test, and the results require hours or days to be sent to the visa applicant and the sponsor. Due to the relatively large number of applicants every day, these methods may prove to be inefficient and require high costs on the part of the visa screening center. Hence, Volatect provides an alternative solution that is accurate, but also rapid and cost-effective. <br /><br />
+
+                    Furthermore, once an applicant completes the medical tests, the results can be viewed online using the transaction number. The API system can facilitate this process by sending the results (within 1 hour of testing) to the appropriate parties, including the clinic database, the Department of Health, the applicant, and the applicant sponsor (if necessary).<br /><br />
+
+                    One of the team members accompanied a group of 20 students for the medical tests, and the group was finished in around an hour. Since the trip was on a weekday morning, when the center is expected to function at its peak, we regarded an estimate of 20 tests per hour to be appropriate for our case. We plan to expand on our device in the future by adding more chips to allow around 20 tests to run simultaneously to match the need of such a screening center.
+
+</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/0/0e/T--NYU_Abu_Dhabi--UAEFLAG.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:left;">September 2019</h6>
+                  <h4 class="timeline-title">Talking to Alexandra Mystikou</h4>
+                  <p class="text-muted">Location: New York University Abu Dhabi</p>
+                </div>
+                <div class="timeline-body">
+                  <p>While experimenting with the CRISPR-Cas12a system, we noticed that while although we extracted plasmids from colonies that were successfully transfected, the Cas12a enzyme was able to cut the DNA in some replicates but not in others. Moreover, ASK WHAT HAPPENED
+To help us troubleshoot this issue, we contacted Alexandra Mystikou, a post-doctoral associate at New York University Abu Dhabi. After explaining our issue and discussing the reagents we used, we realized that we had been using AsCas12a crRNAs rather than LbCas12a crRNA that was required for use with the reagent in our disposal, Lba Cas12a (Cpf1). Therefore, we redesigned our </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/0/0e/T--NYU_Abu_Dhabi--UAEFLAG.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:right;">September 2019</h6>
+                  <h4 class="timeline-title">Talking to Mr. Matt Karau</h4>
+                  <p class="text-muted">Location: Engineering Design Studio, New York University Abu Dhabi</p>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    Working with RPA and CRISPR reagents means that the device must be able to provide the optimal temperatures for the reactions to occur. Hence, we used a circuit system to help us heat and cool the chip at specific times to either store the reagents or execute the reaction. When we came across a standstill during this design process, Matt Karau helped us immensely with building the circuit and setting the thermal electric cooler. <br /><br />
+
+                    In addition, scaling our project to include more chips meant that we also required more sensors to detect the FQ quencher fluorescence. Matt provided us with analogue to digital converters to extend the analogue inputs of arduino so that we can utilize one arduino to read data from more sensors.
+
+</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/0/0e/T--NYU_Abu_Dhabi--UAEFLAG.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:left;">October 2019</h6>
+                  <h4 class="timeline-title">Visiting Mr Harris</h4>
+                  <p class="text-muted">Location: New York University Abu Dhabi</p>
+                </div>
+                <div class="timeline-body">
+                  <p>bla bla bla</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+            <div class="timeline-badge"><img class="img-fluid" src="https://2019.igem.org/wiki/images/c/cb/T--NYU_Abu_Dhabi--turkey_flag.png" /></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h6 class="timeline-title" style="text-align:right;">October 2019</h6>
+                  <h4 class="timeline-title">Talk to Instanbul air</h4>
+                  <p class="text-muted">Location: Istanbul, Turkey</p>
+                </div>
+                <div class="timeline-body">
+                  <p>Tbla bla bla
+</p>
+                </div>
+              </div>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+        </div>
+    </div>
+    <!-- End: Article Clean -->
+    <!-- Start: 2 Rows 1+4 Columns -->
+      <div id="footerContainer" style="background-color: white;color:black;">
+        <!-- Start: HeartAnimation -->
+<script>
+
+    $(function () {
+        var controller5 = new ScrollMagic.Controller();
+
+        var rotateHeart = new TimelineMax()
+        .add(TweenMax.to("#heart_icon", 50, {rotation:180}),"up")
+        .add(TweenMax.to("#heart_icon", 50, {y:-100}),"up")
+        .add(TweenMax.to("#heart_icon", 50, {rotation:360}),"down")
+        .add(TweenMax.to("#heart_icon", 50, {y:0}),"down")
+
+        //microfluidicsContainer webapiHolder
+        var sceneHeart = new ScrollMagic.Scene({ duration:"100px",offset:"50px"})
+        //.setTween(rotateHeart)
+        .triggerElement("#socialContainer")
+       //.setPin("#middleFeatureContainer")
+                        //.addIndicators({name: "heart"})
+                        .addTo(controller5)
+        .on("start", ()=> {
+            var rotateHeart = new TimelineMax()
+        .add(TweenMax.to("#heart_icon", 1, {y:-30}),"up")
+        .add(TweenMax.to("#heart_icon", 1, {rotation:360,y:0}),"down")
+        });
+    });
+
+
+</script>
+        <!-- End: HeartAnimation -->
+        <div class="container" style="padding: 7px;background-color: white; color:black;">
+            <style>
+
+.sponsor-logo {
+    max-height:100px;
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .1s ease-in-out;
+
+    }
+
+    .sponsor-logo:hover {
+        max-height:100px;
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+
+
+    }
+    .mobile-space {
+        height:55px;
+    }
+        </style>
+
+            <div class="row d-xl-flex justify-content-xl-center text-center" style="background-color: white; color:black;">
+                <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/1/1f/T--NYU_Abu_Dhabi--PromegaLogo.jpeg/800px-T--NYU_Abu_Dhabi--PromegaLogo.jpeg"></div>
+                <div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/f/f2/T--NYU_Abu_Dhabi--MathworksLogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/3/34/T--NYU_Abu_Dhabi--IDTlogo.png/800px-T--NYU_Abu_Dhabi--IDTlogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/6/69/T--NYU_Abu_Dhabi--TwistLogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/e/e4/T--NYU_Abu_Dhabi--NYUAD-LOGO.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/a/a5/T--NYU_Abu_Dhabi--NYU-logo.png/800px-T--NYU_Abu_Dhabi--NYU-logo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End: 2 Rows 1+4 Columns -->
+    <footer style="background:white;color:black;">
+        <div class="container">
+            <p>©&nbsp;Volatect 2019. All Rights Reserved.</p>
+            <ul class="list-inline" style="background:white;color:black;">
+                <li class="list-inline-item"><a href="#" style="background:white;color:black;">Privacy</a></li>
+                <li class="list-inline-item"><a href="#" style="background:white;color:black;">Terms</a></li>
+                <li class="list-inline-item"><a href="#"  style="background:white;color:black;">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/bootstrapjs?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/sampleScript?action=raw&ctype=text/javascript"></script>
+</body>
+
+</html>
