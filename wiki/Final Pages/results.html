@@ -1,5 +1,6 @@
 {{NYU_Abu_Dhabi/bootstrap.css}}
 {{NYU_Abu_Dhabi/sampleStyles.css}}
+
 <html>
 <style>
 #home_logo, #sideMenu { display:none; }
@@ -26,10 +27,69 @@
     font-size: -15.625rem;
     line-height: 2.5;
 }
-@font-face {
-    font-family: avenir;
-    src: url("https://2019.igem.org/wiki/images/2/2e/T--NYU_Abu_Dhabi--Avenir_font2.woff") format("opentype");
+
+.highlight-clean {
+  color: #313437;
+  background-color: #fff;
+  padding: 50px 0;
 }
+
+.highlight-clean p {
+  color: #7d8285;
+}
+
+.highlight-clean h2 {
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
+  color: inherit;
+}
+
+.highlight-clean .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+
+.highlight-clean .buttons {
+  text-align: center;
+}
+
+.highlight-clean .buttons .btn {
+  padding: 16px 32px;
+  margin: 6px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none;
+  background-color: #ddd;
+}
+
+.highlight-clean .buttons .btn:hover {
+  opacity: 1;
+}
+
+.highlight-clean .buttons .btn:active {
+  transform: translateY(1px);
+}
+
+.highlight-clean .buttons .btn-primary {
+  background-color: #055ada;
+  color: #fff;
+}
+
+
+
+
 </style>
 </head>
 
@@ -126,9 +186,7 @@ https://2019.igem.org/Team:NYU_Abu_Dhabi/ScrollMagic?action=raw&ctype=text/javas
 $( document ).ready(function() {
     var isHovered=false;
     $( ".nav-item.dropdown" ).each(function(){
-
         $( this ).hover(function(){
-
 $(this).children("div").fadeIn(400);
         // $(this).children("div").addClass("show");
                               console.log(isHovered);
@@ -142,7 +200,6 @@ $(this).children("div").fadeIn(400);
     $(".nav-item.dropdown").children( ".dropdown-menu" ).each(function(){
         $(this).hover(function(){
             isHovered=true;
-
         }, function() {
             isHovered=false;
         });
@@ -152,15 +209,11 @@ $(this).children("div").fadeIn(400);
                           $( this ).mouseleave( function(){$(this).removeClass("show");} )
                           });
     */
-
     var is_mobile = false;
-
     if( $('#mobileChecker').css('display')=='none') {
         is_mobile = true;
     }
-
     // now i can use is_mobile to run javascript conditionally
-
     if (is_mobile == true) {
         /**/
         $(".dropdown-menu").each(function () {
@@ -173,47 +226,41 @@ $(this).children("div").fadeIn(400);
     </nav>
 
     <!-- Start: Article Clean -->
-<div class="container">
-<section style="padding: 56px 0px;">
-<img style="width:100%;" src="https://2019.igem.org/wiki/images/d/d0/T--NYU_Abu_Dhabi--safety_feature_image.jpg">
-        </p>
-</section>
-</div>
 
-<div id="projectinspiration">
-    <div class="container-fluid w-100">
-        <div class="row">
-            <div class="col-lg-6 col-xl-6 offset-lg-1 offset-xl-1 mx-auto">
-                <!-- Start: Intro -->
-                <div class="intro">
-                    <h1 class="text-center">Safety</h1>
-                </div>
-                <!-- End: Intro -->
-                <!-- Start: Text -->
-<p class="text-content" style="   font-size: 1.5em;
-font-size: -15.625rem;
 
-font-family: avenir;
-">
-    The NYU Abu Dhabi iGEM Team has ensured strict adherence to the safety rules required by iGEM, the university, and the regional law while working in the laboratory. <br /><br />
 
-    PPE was worn at all times while in the laboratory, including gloves and lab coats. Biosafety training was conducted for the team members by our instructor, Ibrahim Chehade, who also oversaw our experiments and lab practices. The team members also completed online biology laboratory safety training. The experimenters maintained a system of supervision within the team, such that two members were simultaneously working together at the laboratory to keep each other accountable and maintain safe practices. Laboratory access was limited to faculty and instructors, the team members, and any maintenance workers. <br /><br />
 
-    All our work was in compliance with NYU Abu Dhabi’s safety protocol, and this was ensured through conversations with Mr. Hussain Mir Nawaz, the Environmental Health and Safety (EHS) department’s Biosafety Officer. <br /><br />
 
-    All wastes were disposed of in the correct trash, depending on whether in contained chemicals, biological waste, or glassware in accordance with NYUAD Environmental Health and Safety Policy. Instead of utilizing ethidium bromide for staining when conducting agarose gel electrophoresis, GelRed® and GelGreen® were used. These compounds are nontoxic and nonmutagenic, as they are unable to permeate cell membranes. Furthermore, they pose no harm to aquatic life, and therefore, can be disposed of in a sink or regular trash. <br /><br />
 
-    The strain used during our experimentation was DH5-Alpha, which is routinely used in cloning applications and can be handled at a BioSafety Level 1 laboratory. To ensure our experiments posed minimal harm to the team members, the genes selected for ligation do not code for any toxic proteins or compounds. These were simply ligated into plasmids with pJET backbones. No mutations were introduced into any bacteria.  <br /><br />
 
-    With regards to the device, any bacteria used will be contained within an enclosed microfluidics chip. This ensures that no bacteria or reagents (RPA Mix, CRISPR-Cas12a Mix) leak outside the device. Also, it is expected that a trained professional will handle the usage of the device and the saliva collection procedure at an airport of visa screening setting. <br /><br />
+<body>
+    <div class="highlight-clean">
+        <h2 class="text-center" style="font-size: 21px;"></h2>
+        <h2 class="text-center">Results</h2>
+        <p class="text-center"></p>
+        <div class="buttons"><a class="btn btn-primary" role="button" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/ResultsBio" style="width: 155px;height: 47px;background-color: rgb(0,0,0);">Biology</a><a href="https://2019.igem.org/Team:NYU_Abu_Dhabi/ResultsEngineering" class="btn btn-primary" role="button" style="width: 155px;height: 47px;background-color: rgb(0,0,0);">Engineering</a></div>
+    </div>
 
-    Sources:<br/>
-    <a href="https://biotium.com/technology/nucleic-acid-gel-stains/gelred-gelgreen-dna-gel-stains/">https://biotium.com/technology/nucleic-acid-gel-stains/gelred-gelgreen-dna-gel-stains/</a><br/>
-    <a href="https://www.mclab.com/mclab_pages/Dh5-AlphaUserManual.pdf">https://www.mclab.com/mclab_pages/Dh5-AlphaUserManual.pdf</a></p>
-                <!-- End: Text -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/new-age.js"></script>
+    <script src="assets/js/Right-Sidebar.js"></script>
+    <script src="assets/js/scrollSmooth.js"></script>
+    <script src="assets/js/Sidebar-Menu.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
 
-            </div>
-        </div>
+
+
+
+
+
+
+
 
 
         </div>
@@ -223,16 +270,13 @@ font-family: avenir;
       <div id="footerContainer" style="background-color: white;color:black;">
         <!-- Start: HeartAnimation -->
 <script>
-
     $(function () {
         var controller5 = new ScrollMagic.Controller();
-
         var rotateHeart = new TimelineMax()
         .add(TweenMax.to("#heart_icon", 50, {rotation:180}),"up")
         .add(TweenMax.to("#heart_icon", 50, {y:-100}),"up")
         .add(TweenMax.to("#heart_icon", 50, {rotation:360}),"down")
         .add(TweenMax.to("#heart_icon", 50, {y:0}),"down")
-
         //microfluidicsContainer webapiHolder
         var sceneHeart = new ScrollMagic.Scene({ duration:"100px",offset:"50px"})
         //.setTween(rotateHeart)
@@ -246,29 +290,22 @@ font-family: avenir;
         .add(TweenMax.to("#heart_icon", 1, {rotation:360,y:0}),"down")
         });
     });
-
-
 </script>
         <!-- End: HeartAnimation -->
         <div class="container" style="padding: 7px;background-color: white; color:black;">
             <style>
-
 .sponsor-logo {
     max-height:100px;
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
       filter: gray; /* IE5+ */
       -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
       -webkit-transition: all .1s ease-in-out;
-
     }
-
     .sponsor-logo:hover {
         max-height:100px;
     filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
-
-
     }
     .mobile-space {
         height:55px;
