@@ -26,10 +26,67 @@
     font-size: -15.625rem;
     line-height: 2.5;
 }
-@font-face {
-    font-family: avenir;
-    src: url("https://2019.igem.org/wiki/images/2/2e/T--NYU_Abu_Dhabi--Avenir_font2.woff") format("opentype");
+
+.highlight-clean {
+  color: #313437;
+  background-color: #fff;
+  padding: 50px 0;
 }
+
+.highlight-clean p {
+  color: #7d8285;
+}
+
+.highlight-clean h2 {
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  padding-top: 0;
+  margin-top: 0;
+  color: inherit;
+}
+
+.highlight-clean .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+
+.highlight-clean .buttons {
+  text-align: center;
+}
+
+.highlight-clean .buttons .btn {
+  padding: 16px 32px;
+  margin: 6px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none;
+  background-color: #ddd;
+}
+
+.highlight-clean .buttons .btn:hover {
+  opacity: 1;
+}
+
+.highlight-clean .buttons .btn:active {
+  transform: translateY(1px);
+}
+
+.highlight-clean .buttons .btn-primary {
+  background-color: #055ada;
+  color: #fff;
+}
+
+
 </style>
 </head>
 
@@ -76,8 +133,7 @@
                       <div class="dropdown-menu" role="menu">
                           <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Collaborations">Collaborations</a>
                          <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Human Practices</a>
-                          <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Integrated Human</a><a class="dropdown-item" role="presentation"
-                              href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Public_Engagement">Public Engagement</a>
+                          <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Integrated Human</a>
                               <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
                           </div>
                   </li>
@@ -123,9 +179,7 @@ https://2019.igem.org/Team:NYU_Abu_Dhabi/ScrollMagic?action=raw&ctype=text/javas
 $( document ).ready(function() {
     var isHovered=false;
     $( ".nav-item.dropdown" ).each(function(){
-
         $( this ).hover(function(){
-
 $(this).children("div").fadeIn(400);
         // $(this).children("div").addClass("show");
                               console.log(isHovered);
@@ -139,7 +193,6 @@ $(this).children("div").fadeIn(400);
     $(".nav-item.dropdown").children( ".dropdown-menu" ).each(function(){
         $(this).hover(function(){
             isHovered=true;
-
         }, function() {
             isHovered=false;
         });
@@ -149,15 +202,11 @@ $(this).children("div").fadeIn(400);
                           $( this ).mouseleave( function(){$(this).removeClass("show");} )
                           });
     */
-
     var is_mobile = false;
-
     if( $('#mobileChecker').css('display')=='none') {
         is_mobile = true;
     }
-
     // now i can use is_mobile to run javascript conditionally
-
     if (is_mobile == true) {
         /**/
         $(".dropdown-menu").each(function () {
@@ -170,55 +219,36 @@ $(this).children("div").fadeIn(400);
     </nav>
 
     <!-- Start: Article Clean -->
-<div class="container">
-  <style>
-a {
-  color:black;
-}
-  </style>
 
-<section style="padding: 56px 0px; color:black;">
-        <h1 class="text-center">Awards</h1>
-        <ul class="nav justify-content-center">
-    <li class="nav-item" style="color:black">
-      <a class="nav-link active" href="#">Best Education & Public Engagement</a>
-    </li>
-    <li class="nav-item" style="color:black">
-      <a class="nav-link" href="#">Best Integrated Human Practices</a>
-    </li>
-    <li class="nav-item" style="color:black">
-      <a class="nav-link" href="#">Best Software Tool</a>
-    </li>
-    <li class="nav-item" style="color:black">
-      <a class="nav-link" href="#">Best Hardware</a>
-    </li>
-    <li class="nav-item" style="color:black">
-      <a class="nav-link" href="#">Best Supporting Entrepreneurship</a>
-    </li>
 
-  </ul>
 
-</section></div>
+<body>
+    <div class="highlight-clean">
 
-<div id="projectinspiration">
-    <div class="container-fluid w-100">
-        <div class="row">
-            <div class="col-lg-6 col-xl-6 offset-lg-1 offset-xl-1 mx-auto">
-                <!-- Start: Intro -->
-                <div class="intro">
+        <h2 class="text-center" style="font-size: 21px;"></h2>
+        <h2 class="text-center">Volatect Notebook</h2>
+        <p class="text-center">Please select the type of notebook you would like to access</p>
+        <div class="buttons"><a href="https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookJuly" class="btn btn-primary" role="button" href="#" style="width: 155px;height: 47px;background-color: rgb(0,0,0);">Biology</a><a href="http://www.google.com" class="btn btn-primary" role="button" href="#" style="width: 155px;height: 47px;background-color: rgb(0,0,0);">Engineering</a></div>
+  </div><div style="height:800px;background-image:url(https://2019.igem.org/wiki/images/thumb/a/ad/T--NYU_Abu_Dhabi--notebook_timeline.png/1600px-T--NYU_Abu_Dhabi--notebook_timeline.png);background-position:center;background-size:cover;"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/new-age.js"></script>
+    <script src="assets/js/Right-Sidebar.js"></script>
+    <script src="assets/js/scrollSmooth.js"></script>
+    <script src="assets/js/Sidebar-Menu.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
 
-                </div>
-                <!-- End: Intro -->
-                <!-- Start: Text -->
-<p class="text-content" style="   font-size: 1.5em;
-font-size: -15.625rem;
-font-family: avenir;
-">
-    Text Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text Text</p>
-                <!-- End: Text -->
 
-            </div>
-        </div>
+
+
+
+
+
 
 
         </div>
@@ -228,16 +258,13 @@ font-family: avenir;
       <div id="footerContainer" style="background-color: white;color:black;">
         <!-- Start: HeartAnimation -->
 <script>
-
     $(function () {
         var controller5 = new ScrollMagic.Controller();
-
         var rotateHeart = new TimelineMax()
         .add(TweenMax.to("#heart_icon", 50, {rotation:180}),"up")
         .add(TweenMax.to("#heart_icon", 50, {y:-100}),"up")
         .add(TweenMax.to("#heart_icon", 50, {rotation:360}),"down")
         .add(TweenMax.to("#heart_icon", 50, {y:0}),"down")
-
         //microfluidicsContainer webapiHolder
         var sceneHeart = new ScrollMagic.Scene({ duration:"100px",offset:"50px"})
         //.setTween(rotateHeart)
@@ -251,29 +278,22 @@ font-family: avenir;
         .add(TweenMax.to("#heart_icon", 1, {rotation:360,y:0}),"down")
         });
     });
-
-
 </script>
         <!-- End: HeartAnimation -->
         <div class="container" style="padding: 7px;background-color: white; color:black;">
             <style>
-
 .sponsor-logo {
     max-height:100px;
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
       filter: gray; /* IE5+ */
       -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
       -webkit-transition: all .1s ease-in-out;
-
     }
-
     .sponsor-logo:hover {
         max-height:100px;
     filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
-
-
     }
     .mobile-space {
         height:55px;
