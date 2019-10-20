@@ -214,7 +214,7 @@ $(this).children("div").fadeIn(400);
           </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
-        <br/><br/><br/>
+
         <div class="tab-pane fade show active" id="nav-summary" role="tabpanel" aria-labelledby="nav-summary-tab">
           <p style="word-wrap: break-word;font-family:avenir;font-size:18px;">
           <h1 style="font-family:avenir;">  Gblocks:</h1><br/><br/>
@@ -331,13 +331,168 @@ $(this).children("div").fadeIn(400);
         </div>
 
         <div class="tab-pane fade" id="nav-genes" role="tabpanel" aria-labelledby="nav-genes-tab">
+          <style>
+          li {
+            font-family:avenir;
+            font-size:16px;
+          }
+          h4 {
+            font-family:avenir;
+          }
+          p {
+            font-family:avenir;
+            font-size:18px;
+          }
+          </style>
           <p style="font-family:avenir;font-size:18px;">
-          genes
+            After we selected the diseases we will be targeting, we searched for appropriate DNA sequences for each selected strain to incorporate into our gblocks (ordered from our sponsor, IDT). The following criteria guided the pathogen selection:<br/>
+  <ol type="a">
+    <li>The sequence has been used, based on literature, as a target gene for the species-specific detection of our selected diseases, usually through PCR.</li>
+  <li>The sequence is unique to the strain causing the target disease</li>
+</ol>
+<hr>
+<h4>pcaA:</h4><br/><br/>
+<p style="font-family:avenir;font-size:18px;">The gene pcaA on locus Rv0470c was selected as the target gene which functions as a cyclopropane mycolic acid synthase. It encodes an S-adenosyl methionine–dependent methyltransferase that catalyzes proximal cyclopropanation of α mycolate, the major mycolic acid subclass of the Mtb cell envelope.</p><br/>
+
+<p style="font-family:avenir;font-size:16px;">
+Reference: Rao, Vivek et al. “Mycobacterium tuberculosis controls host innate immune activation through cyclopropane modification of a glycolipid effector molecule.” The Journal of experimental medicine vol. 201,4 (2005): 535-43. doi:10.1084/jem.20041668
+</p><br/><br/>
+<hr>
+<h4>HBcAg:</h4><br/><br/>
+<p style="font-family:avenir;font-size:18px;">
+The gene HBcAg codes for a hepatitis B viral protein which serves as an indicator of active viral replication; meaning that an infected patient with Hepatitis B can likely transmit the virus onto another. HBcAg protein is an antigen that can be found on the surface of the nucleocapsid core (the innermost layer of the hepatitis B virus).<br/><br/>
+</p>
+References:<br/>
+<ol ="1">
+<li>https://www.cdc.gov/hepatitis/hbv/index.htm</li>
+<li>Kim, Bo Hyun, and W. Ray Kim. "Epidemiology of hepatitis B virus infection in the United States." Clinical liver disease 12.1 (2018): 1.</li>
+<li>Kim, W Ray. “Epidemiology of hepatitis B in the United States.” Hepatology (Baltimore, Md.) vol. 49,5 Suppl (2009): S28-34. doi:10.1002/hep.22975</li>
+<li>https://www.ncbi.nlm.nih.gov/nuccore/NC_003977.2?report=fasta&from=1816&to=2454</li>
+</ol><br/><br/>
+<hr>
+<h4>IS481:</h4><br/>
+<p style="font-family:avenir;font-size:18px;">IS481 is a repetitive, insertable element (transposable element) specific to the Bordetella pertussis  pathogen and is used for PCR diagnosis of the disease. The gene can also be found in other members of the genus Bordetella, which cause whooping cough like symptoms.</p><br/><br/>
+  References:<br/>
+<ol type="1">
+ <li>Finger, Horst. “Bordetella.” Medical Microbiology. 4th Edition., U.S. National Library of Medicine, 1 Jan. 1996, www.ncbi.nlm.nih.gov/books/NBK7813/.</li>
+<li>NHS Choices, NHS, www.nhs.uk/conditions/whooping-cough/.</li>
+<li>Brown, Jennifer J. “10 Essential Facts About Whooping Cough.” EverydayHealth.com, Everyday Health, 30 June 2015, www.everydayhealth.com/news/10-essential-facts-about-whooping-cough/.</li>
+<li>GBD 2015 Mortality and Causes of Death Collaborators. “Global, Regional, and National Life Expectancy, All-Cause Mortality, and Cause-Specific Mortality for 249 Causes of Death, 1980-2015: a Systematic Analysis for the Global Burden of Disease Study 2015.” Lancet</li>
+</ol><br/><br/>
+<hr>
+<h4>Ypo2088:</h4><br/><br/>
+<p style="font-family:avenir;font-size:18px;">The gene ypo2088 is specific to Y. Pestis. It is a protein coding gene that makes the enzyme methyltransferase. The enzyme moves methyl groups from one compound to another.</p>
+<br/><br/>
+References:<br/>
+<ol type="1">
+<li>Matero, Pirjo, et al. “Real-Time Multiplex PCR Assay for Detection of Yersinia Pestis and Yersinia Pseudotuberculosis.” APMIS : Acta Pathologica, Microbiologica, Et Immunologica Scandinavica, U.S. National Library of Medicine, Jan. 2009, www.ncbi.nlm.nih.gov/pubmed/19161535.</li>
+ <li>Zhou, Dongsheng, et al. “Identification of Signature Genes for Rapid and Specific Characterization of Yersinia Pestis - Zhou - 2004 - Microbiology and Immunology - Wiley Online Library.” Microbiology and Immunology, John Wiley & Sons, Ltd (10.1111), 14 Nov. 2013, onlinelibrary.wiley.com/doi/10.1111/j.1348-0421.2004.tb03522.x/full</li>
+</ol>
+
           </p>
         </div>
         <div class="tab-pane fade" id="nav-primer" role="tabpanel" aria-labelledby="nav-primer-tab">
           <p style="font-family:avenir;font-size:18px;">
-primer design
+            <h4>PCR Primer Design Process:</h4><br/>
+            <p style="font-family:avenir;font-size:18px;">NCBI provides Primer-BLAST for automatically designing primers based on a query sequence. </p><br/><br/>
+
+            <p style="font-family:avenir;font-size:18px;">To start designing primers, go to the BLAST homepage and scroll down to the Primer-BLAST option under Specialized BLAST.</p> <br/><br/>
+
+            <p style="font-family:avenir;font-size:18px;">Enter your target sequence either by cut-and-paste or, if it’s listed in NCBI’s databases, as an accession number. <br/>
+            The target sequence is normally found earlier on by searching the particular gene sequence and downloading the fasta file or copying directly the sequence. <br/><br/>
+</p><p style="font-family:avenir;font-size:18px;">
+            The ‘Descriptions’ section of the report now includes a download menu that provides direct access to FASTA data, either of the complete subject sequence or only the aligned portion, as well as to other formats including GenBank flat files, hit tables and XML. Checkboxes to the left of each subject sequence allow users to download an arbitrary subset of the matching sequences. Clicking the title of a subject now links to the alignment display, which also contains similar download functions for that alignment along with controls to navigate between alignments and back to the ‘Descriptions’ table. <br/><br/>
+</p><p style="font-family:avenir;font-size:18px;">
+            In the "search for primers dialogue box", gene sequences from the fasta file was pasted and blasted against all genomes. The length of the primers sequence was unspecified neither was the genome of the organism specified. <br/><br/>
+</p>
+          <p style="font-family:avenir;font-size:18px;">  The primers were designed according to the preset and optimum conditions for Tm.</p>
+ <br/><br/>
+            <p style="font-family:avenir;font-size:18px;">The selection of the right primers for our experiments were done accordingly to the following parameters : GC content = 50% , self complementarity < 3 and complementarity < 8 <br/><br/>
+</p><p style="font-family:avenir;font-size:18px;">
+            Preferred primers had the G-C clamp
+ <br/><br/>
+            The complementarity test were performed using tools from Oligocalc tools.
+ <br/><br/></p><br/><br/>
+
+ <h4>LAMP Primers Design Process</h4><br/>
+ <h4>A) Select target sequence:</h4><br/>
+ <ol type="1">
+   <li>Select a highly conserved region of target gene.</li>
+   <li>Target region should be 200 - 2000 bp long.</li>
+   <li>Save the target sequence file in FASTA or text (.txt) format.</li>
+</ol><br/><br/>
+<h4>B) LAMP Primer design:</h4><br/>
+<ol>
+  <li>Launch LAMP primer design software: http://primerexplorer.jp/lampv5e/index.html</li>
+<li>Upload the sequence file, set the parameter set as "automatic judgement", and click “Primer Design”.</li>
+<li>(Optional) On the next screen, click on “Detail Settings”. If necessary, select AT-rich or GC-rich option. The Tm of primers may also be varied, but changing the length of primers is not recommended.</li>
+<li>Click “Generate” to display number of primers designed.</li>
+<li>Click on “Display” to display the list of primers in new window. This page lists 1-100 primer sets.</li>
+<li>To look at additional primers, change the page number, and it will open a new window with a list of primer sets. Each page lists maximum of 100 primers.</li>
+</ol><br/><br/>
+<h4>C) Selecting the primers:</h4><br/><br/>
+<ol>
+<li>1. Select the desired primer set by checking the box on the left. Multiple primer sets can be chosen at the same time. Lower dG values are usually preferred. Click “Confirm” to select the primer set.</p><br/>
+<img src="https://2019.igem.org/wiki/images/6/63/T--NYU_Abu_Dhabi--parts3.png" class="img-fluid"
+/>
+</li>
+<li>
+  A new window will open to show the details of the selected primer set.<br/>
+  <img src="https://2019.igem.org/wiki/images/e/e7/T--NYU_Abu_Dhabi--parts4.png" class="img-fluid"/>
+</li>
+</ol>
+<br/>
+<p style="font-family:avenir;font-size:18px;">
+Check the stability of the following regions to confirm that the dG is < -4.0 kcal/mol:</p><br/>
+<p style="font-family:avenir;font-size:18px;">* the 3’ end at the region F2</p><br/>
+<p style="font-family:avenir;font-size:18px;">* the 5’ end at the region F1c</p><br/>
+<p style="font-family:avenir;font-size:18px;">* the 3’end at the region B2</p><br/>
+<p style="font-family:avenir;font-size:18px;">* the 5’ end at the region B1c</p><br/>
+ <p style="font-family:avenir;font-size:18px;">
+In the above example, the 3’ end of Primer B1C (dG = -6.26kcal/mol) has the highest stability. The dG of 5’ end of Primer F1c (-3.92 kcal/mol) is above -4.0, indicating it is unstable. Therefore, this entire primer set should not be used. Another primer set should be selected from the list.</p><br/></br>
+ <p style="font-family:avenir;font-size:18px;">
+3. Once primer sets with required stability are found, check whether F3 and B3 of the set fits into the guide RNA range.</p><br/><br/>
+ <p style="font-family:avenir;font-size:18px;">
+Troubleshooting: If no primers are designed or too few primer pairs are generated, try changing parameters:</p><br/><br/>
+ <p style="font-family:avenir;font-size:16px;">
+1. Use a broader range of Tm for primers, but make sure to keep the Tm of F1c/B1c about 3-4 degrees higher than that of F2/B2 and F3/B3 primers.</p>
+<p style="font-family:avenir;font-size:16px;">2. Change the minimum length of F2/B2 and F3/B3 primers to 15 rather than 18.</p>
+<p style="font-family:avenir;font-size:16px;">3. Change the GC rate to 20 or 25 rather than 40.</p><br/>
+<h4>RPA Primer Design Process:</h4><br/><br/>
+
+<p style="font-family:avenir;font-size:16px;">Genes were located in .fasta format on NCBI and sequenced were created in Benchling</p><br/><br/>
+<p style="font-family:avenir;font-size:16px;">For RPAprimers generated from Primer BLAST, the following values were used in settings according to TwistDx recommendations:</p><br/><br/>
+<table>
+  <tr>
+    <td>Parameter</td>
+    <td>Product Size</td>
+    <td>Primer Melting Temperature</td>
+    <td>Primer Size Range</td>
+    <td>Primer Size Optimal</td>
+    <td>Primer GC Content</td>
+  </tr>
+  <tr>
+    <td>Value(s)</td>
+    <td>100-200</td>
+    <td>50-100</td>
+    <td>30-36</td>
+    <td>32</td>
+    <td>30%-70%</td>
+  </tr>
+</table><br/><br/>
+<p style="font-family:avenir;font-size:16px;">In addition, a Python package called primedRPA (detailed in the paper titled PrimedRPA: primer design for recombinase polymerase amplification assays, available at <a href="https://www.ncbi.nlm.nih.gov/pubmed/30101342">https://www.ncbi.nlm.nih.gov/pubmed/30101342</a>) was used with the following parameters:</p><br/>
+<img src="https://2019.igem.org/wiki/images/2/28/T--NYU_Abu_Dhabi--parts5.png" class="img-fluid" /><br/>
+<p style="font-family:avenir;font-size:16px;">4. The primers generated were annotated in Benchling and optimal primers (preferably 1 pair from primer BLAST and 1 from primedRPA) were selected based on location, GC content, fitness with PCR amplicon, and quality of available gRNAs within the amplified region.</p><br/><br/>
+
+<h4>gRNA Design Process:</h4><br/><br/>
+<p style="font-family:avenir;font-size:16px;">
+For designing the gRNAs, we used be benchling. For each DNA sequence we first created our primers (PCR, LAMP, AND RPA) and attached them to our DNA strands in order to be able to visualize them on the software's linear map. Making sure that the RPA and LAMP primers fall within the range of our PCR primers, we then selected as our target an appropriate region that falls within our RPA/LAMP primers in order to create our guide RNAs. When multiple gRNA options were provided, the ones with the highest off-target score were selected. The selected gRNA were then NCBI blasted to make sure that they are specific to the chosen bacterial strain. <br/><br/>
+</p><br/><br/>
+ <p style="font-family:avenir;font-size:16px;">
+Some of the gRNAs might as well be specific to other bacterial or viral strains, but since we are testing for only 5 diseases, we made sure that a gRNA that is meant to be specific to one of our strains is not specific to any of the remaining four.
+</p><br/><br/>
+
+
           </p>
         </div>
 
