@@ -1,0 +1,935 @@
+{{NYU_Abu_Dhabi/bootstrap.css}}
+{{NYU_Abu_Dhabi/sampleStyles.css}}
+<html>
+<style>
+#home_logo, #sideMenu { display:none; }
+#sideMenu, #top_title, .patrollink  {display:none;}
+#content { margin-left:0px; margin-top:-30px; padding:0px; width:100%;}
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Volatect</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+<style>
+.text-content {
+   font-size: 22px;
+    font-size: -15.625rem;
+    line-height: 2.5;
+}
+.navigation-clean-button {
+  background: #fff;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #333;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .navigation-clean-button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.navigation-clean-button .navbar-brand {
+  font-weight: bold;
+  color: inherit;
+}
+
+.navigation-clean-button .navbar-brand:hover {
+  color: #222;
+}
+
+.navigation-clean-button.navbar-dark .navbar-brand:hover {
+  color: #f0f0f0;
+}
+
+.navigation-clean-button .navbar-brand img {
+  height: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  width: auto;
+}
+
+.navigation-clean-button .navbar-toggler {
+  border-color: #ddd;
+}
+
+.navigation-clean-button .navbar-toggler:hover, .navigation-clean-button .navbar-toggler:focus {
+  background: none;
+}
+
+.navigation-clean-button.navbar-dark .navbar-toggler {
+  border-color: #555;
+}
+
+.navigation-clean-button .navbar-toggler {
+  color: #888;
+}
+
+.navigation-clean-button.navbar-dark .navbar-toggler {
+  color: #eee;
+}
+
+.navigation-clean-button .navbar-collapse, .navigation-clean-button .form-inline {
+  border-top-color: #ddd;
+}
+
+.navigation-clean-button.navbar-dark .navbar-collapse, .navigation-clean-button.navbar-dark .form-inline {
+  border-top-color: #333;
+}
+
+.navigation-clean-button .navbar-nav a.active, .navigation-clean-button .navbar-nav > .show > a {
+  background: none;
+  box-shadow: none;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav a.active, .navigation-clean-button.navbar-light .navbar-nav a.active:focus, .navigation-clean-button.navbar-light .navbar-nav a.active:hover {
+  color: #8f8f8f;
+  box-shadow: none;
+  background: none;
+  pointer-events: none;
+}
+
+.navigation-clean-button.navbar .navbar-nav .nav-link {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link {
+  color: #465765;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link:focus, .navigation-clean-button.navbar-light .navbar-nav .nav-link:hover {
+  color: #37434d !important;
+  background-color: transparent;
+}
+
+.navigation-clean-button .navbar-nav > li > .dropdown-menu {
+  margin-top: -5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.navigation-clean-button .dropdown-menu .dropdown-item:focus, .navigation-clean-button .dropdown-menu .dropdown-item {
+  line-height: 2;
+  font-size: 14px;
+  color: #37434d;
+}
+
+.navigation-clean-button .dropdown-menu .dropdown-item:focus, .navigation-clean-button .dropdown-menu .dropdown-item:hover {
+  background: #eee;
+  color: inherit;
+}
+
+@media (max-width:767px) {
+  .navigation-clean-button .navbar-nav .show .dropdown-menu {
+    box-shadow: none;
+  }
+}
+
+@media (max-width:767px) {
+  .navigation-clean-button .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #37434d;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 1;
+  }
+}
+
+.navigation-clean-button.navbar-dark {
+  background-color: #1f2021;
+  color: #fff;
+}
+
+.navigation-clean-button.navbar-dark .navbar-nav a.active, .navigation-clean-button.navbar-dark .navbar-nav a.active:focus, .navigation-clean-button.navbar-dark .navbar-nav a.active:hover {
+  color: #8f8f8f;
+  box-shadow: none;
+  background: none;
+  pointer-events: none;
+}
+
+.navigation-clean-button.navbar-dark .navbar-nav .nav-link {
+  color: #dfe8ee;
+}
+
+.navigation-clean-button.navbar-dark .navbar-nav .nav-link:focus, .navigation-clean-button.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff !important;
+  background-color: transparent;
+}
+
+.navigation-clean-button.navbar-dark .navbar-nav > li > .dropdown-menu {
+  background-color: #1f2021;
+}
+
+.navigation-clean-button.navbar-dark .dropdown-menu .dropdown-item:focus, .navigation-clean-button.navbar-dark .dropdown-menu .dropdown-item {
+  color: #f2f5f8;
+}
+
+.navigation-clean-button.navbar-dark .dropdown-menu .dropdown-item:focus, .navigation-clean-button.navbar-dark .dropdown-menu .dropdown-item:hover {
+  background: #363739;
+}
+
+@media (max-width:767px) {
+  .navigation-clean-button.navbar-dark .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #fff;
+  }
+}
+
+.navigation-clean-button .actions .login {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #465765;
+}
+
+.navigation-clean-button.navbar-dark .actions .login {
+  color: #dfe8ee;
+}
+
+.navigation-clean-button.navbar-dark .actions .login:hover {
+  color: #fff;
+}
+
+.navigation-clean-button .navbar-text .action-button, .navigation-clean-button .navbar-text .action-button:active, .navigation-clean-button .navbar-text .action-button:hover {
+  background: #56c6c6;
+  border-radius: 20px;
+  font-size: inherit;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+  padding: .5rem 1rem;
+  transition: background-color 0.25s;
+  font-size: inherit;
+}
+
+.navigation-clean-button .navbar-text .action-button:hover {
+  background: #66d7d7;
+}
+
+.navigation-clean-button.navbar-dark .action-button, .navigation-clean-button.navbar-dark .action-button:active {
+  background: #208f8f;
+}
+
+.navigation-clean-button.navbar-dark .action-button:hover {
+  background: #269d9d;
+}
+
+
+.article-dual-column {
+  color: #56585b;
+  background-color: #ffffff;
+  font-family: avenir;
+  font-size: 14px;
+}
+
+.article-dual-column .intro {
+  font-size: 16px;
+  margin: 0 auto 30px;
+}
+
+.article-dual-column .intro h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  line-height: 1.5;
+  color: inherit;
+  margin-top: 25px;
+}
+
+.article-dual-column .intro p {
+  color: #929292;
+  font-size: 12px;
+}
+
+.article-dual-column .intro p .by {
+  font-style: italic;
+}
+
+.article-dual-column .intro p .date {
+  text-transform: uppercase;
+  padding: 4px 0 4px 10px;
+  margin-left: 10px;
+  border-left: 1px solid #ddd;
+}
+
+.article-dual-column .intro p a {
+  color: #333;
+  text-transform: uppercase;
+  padding-left: 3px;
+}
+
+.article-dual-column .intro img {
+  margin-top: 25px;
+}
+
+.article-dual-column .text p {
+  margin-bottom: 20px;
+  line-height: 1.45;
+}
+
+@media (min-width:768px) {
+  .article-dual-column .text p {
+    font-size: 16px;
+  }
+}
+
+.article-dual-column .text h2 {
+  margin-top: 28px;
+  margin-bottom: 20px;
+  line-height: 1.45;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (min-width:768px) {
+  .article-dual-column .text h2 {
+    font-size: 20px;
+  }
+}
+
+.article-dual-column .text figure {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.article-dual-column .text figure img {
+  margin-bottom: 12px;
+  max-width: 100%;
+}
+
+@media (max-width:767px) {
+  .article-dual-column .toc {
+    border: 1px solid #d3d3d3;
+    padding: 20px 0 15px;
+    margin-bottom: 20px;
+    border-width: 1px 0;
+  }
+}
+
+.article-dual-column .toc p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.article-dual-column .toc ul {
+  padding-left: 20px;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.article-dual-column .toc li {
+  padding: 2px 0;
+}
+
+.article-dual-column .toc a {
+  color: inherit;
+}
+
+
+</style>
+</head>
+
+<body style="position:relative;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top otherPages" style="top:10px;" id="mainNav">
+        <div class="container"><img src="https://2019.igem.org/wiki/images/7/7c/T--NYU_Abu_Dhabi--logoBlack.png" class = "img-fluid" style="width:21px;padding-right:5px;" ><a class="navbar-brand js-scroll-trigger" href="https://2019.igem.org/Team:NYU_Abu_Dhabi">Volatect</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="z-index: 9999;">
+                <ul class="nav navbar-nav ml-auto">
+
+
+                    <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" id="navbarDropdown" href="#yolo" style="height: 100%;" role="button" aria-haspopup="true">Description&nbsp;</a>
+                        <div class="dropdown-menu js-scroll-trigger" role="menu"
+                            aria-labelledby="navbarDropdown">
+                             <a class="dropdown-item" role="presentation" href="description.html">Description</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Software">Software</a><a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Hardware">Hardware</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
+                        </div>
+                    </li>
+
+
+                     <li class="nav-item" role="presentation"><a class="nav-link" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Awards">Awards</a></li>
+
+                    <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#yolo" style="height: 100%;" role="presentation">Process&nbsp;</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Experiments">Experiments</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Notebook">Notebook</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Results">Results&nbsp;</a>
+                           <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Design">Design</a>
+                            <a
+                                    class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
+                                </div>
+                    </li>
+
+
+                     <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#yolo" style="height: 100%;" role="presentation">Engagement&nbsp;</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Collaborations">Collaborations</a>
+                           <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Human Practices</a>
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Integrated Human</a><a class="dropdown-item" role="presentation"
+                                href="public-engagement.html">Public Engagement</a>
+                            </div>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" id="navbarDropdown" href="#yolo" style="height: 100%;" role="button" aria-haspopup="true">About&nbsp;</a>
+                        <div class="dropdown-menu js-scroll-trigger" role="menu"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Mission">Mission Statement</a>
+                             <a class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
+                            <a
+                                class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Nyuad-iGem">NYUAD iGem</a>
+                                <a
+                                class="dropdown-item" role="presentation" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Beyond-iGem">Beyond iGem</a>
+                        </div>
+
+                    </li>
+
+                     <li style="display:none" class="nav-item" role="presentation"><a class="nav-link" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a></li>
+                    <li style="display:none" class="nav-item dropdown" role="presentation"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="human-practices.html">HUMAN</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="human-practices.html">Human Practices</a>
+                            <a class="dropdown-item" role="presentation" href="integrated-humans.html">Integrated Human</a><a class="dropdown-item" role="presentation"
+                                href="public-engagement.html">Public Engagement</a></div>
+                    </li>
+
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://2019.igem.org/Team:NYU_Abu_Dhabi/VolatectAPI">WEB API</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+        </div>
+    </nav>
+    <script
+  src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
+<script src="
+ https://2019.igem.org/Team:NYU_Abu_Dhabi/TweenMax?action=raw&ctype=text/javascript"></script>
+<script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/bootstrapjs?action=raw&ctype=text/javascript"></script>
+<script src="
+https://2019.igem.org/Team:NYU_Abu_Dhabi/ScrollMagic?action=raw&ctype=text/javascript"></script>
+
+<script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/IndicatorDebug?action=raw&ctype=text/javascript"></script>
+<style>
+    @media only screen and (max-width: 760px) {
+  #mobileChecker { display: none; }
+    }</style>
+
+<div id="mobileChecker"></div>
+
+<script>
+$( document ).ready(function() {
+    var isHovered=false;
+    $( ".nav-item.dropdown" ).each(function(){
+        $( this ).hover(function(){
+$(this).children("div").fadeIn(400);
+        // $(this).children("div").addClass("show");
+                              console.log(isHovered);
+    }, function(){
+                              console.log(isHovered);
+                              if(!$(this).children("div").is(":hover")){
+            $(this).children("div").fadeOut(50);
+                              }
+                             } )
+                          });
+    $(".nav-item.dropdown").children( ".dropdown-menu" ).each(function(){
+        $(this).hover(function(){
+            isHovered=true;
+        }, function() {
+            isHovered=false;
+        });
+    });
+    /*
+    $(".nav-item.dropdown").children( ".dropdown-menu" ).each(function(){
+                          $( this ).mouseleave( function(){$(this).removeClass("show");} )
+                          });
+    */
+    var is_mobile = false;
+    if( $('#mobileChecker').css('display')=='none') {
+        is_mobile = true;
+    }
+    // now i can use is_mobile to run javascript conditionally
+    if (is_mobile == true) {
+        /**/
+        $(".dropdown-menu").each(function () {
+           // $(this).addClass("show")
+        });
+    }
+ });
+</script>
+</div>
+    </nav>
+
+    <!-- Start: Article Clean -->
+
+
+
+
+
+<body>
+    <section style="padding: 56px 0px;background-color: rgba(255,255,255,0.73);"></section><div style="height:700px;background-image:url(https://2019.igem.org/wiki/images/a/a8/T--NYU_Abu_Dhabi--labJuly.jpg);background-position:center;background-size:cover;"></div>
+    <div class="simple-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="article-dual-column">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="intro">
+                        <h1 class="text-center"><strong>Biology Notebook - July</strong><br></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+                                <div class="container"><a href=notebook_title.html class="navbar-brand" href="#">Notebook</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                    <div
+                                        class="collapse navbar-collapse" id="navcol-1">
+                                        <ul class="nav navbar-nav mr-auto">
+                                            <li class="nav-item" role="presentation"></li>
+                                            <li class="nav-item" role="presentation"></li>
+                                            <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><strong>MONTH 1: JULY&nbsp;</strong></a>
+                                                <div class="dropdown-menu show" role="menu"><a href="https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookJuly#week1" role="presentation" class="dropdown-item" href="#">Week 1 (7/15 - 7/20) </a><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookJuly#week2" role="presentation" class="dropdown-item" href="#">Week 2 (7/21 - 7/27)</a><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookJuly#week3" role="presentation" class="dropdown-item" href="#">Week 3 (7/28 - 8/03)</a></div>
+                                            </li>
+                                            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><strong>MONTH 2: AUGUST</strong></a>
+                                                <div class="dropdown-menu" role="menu"><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookAugust#week4" class="dropdown-item" role="presentation" href="#">Week 4 (8/04 - 8/10)</a></div>
+                                            </li>
+                                            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><strong>MONTH 3: SEPTEMBER</strong></a>
+                                                <div class="dropdown-menu" role="menu"><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookSeptember#week5" class="dropdown-item" role="presentation" href="#">Week 5 (9/01 - 9/07)</a><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookSeptember#week6" class="dropdown-item" role="presentation" href="#">Week 6 (9/08 - 9/14)</a><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookSeptember#week7" class="dropdown-item" role="presentation" href="#">Week 7 (9/15 - 9/21)</a>
+                                                    <a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookSeptember#week8"
+                                                        class="dropdown-item" role="presentation" href="#">Week 8 (9/22 - 9/28)</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><strong>MONTH 4: OCTOBER&nbsp;</strong></a>
+                                                <div class="dropdown-menu" role="menu"><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookOctober#week9" class="dropdown-item" role="presentation" href="#">Week 9 (9/29 - 10/05)</a><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookOctober#week10" class="dropdown-item" role="presentation" href="#">Week 10 (10/06 - 10/12)</a><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookOctober#week11" class="dropdown-item" role="presentation"
+                                                        href="#">Week 11 (10/13 - 10/19)</a><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookOctober#week12" class="dropdown-item" role="presentation" href="#">Week 12 (10/20 - 10/26)</a><a href= "https://2019.igem.org/Team:NYU_Abu_Dhabi/NotebookOctober#week13" class="dropdown-item" role="presentation" href="#">Week 13 (10/27 - 11/02)</a></div>
+                                            </li>
+                                        </ul><span class="navbar-text actions"> </span></div>
+                        </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1">
+                <div class="text">
+                    <h2><a id="week1">WEEK 1</a></h2>
+                    <h2>Monday :&nbsp;7/15/2019&nbsp;</h2>
+                    <p><strong><span style="text-decoration: underline;">Learned Basic Lab Techniques</span></strong><br></p>
+                    <p>● pipetting<br>● making agarose gel<br>● making agar plates with LB + AMP&nbsp;<br></p>
+                    <p><strong><span style="text-decoration: underline;">Agarose Gel Preparation (3%):</span></strong><br></p>
+                    <p><strong>1. </strong>1x TAE buffer was prepared by diluting a 50x TAE buffer<br><strong>2. </strong>1.5 g of Agarose were added to 50 ml of 1x TAE buffer (3%) in a conical flask<br><strong>3. </strong>The solution was placed in a microwave
+                        and mixed until solution became clear<br><strong>4. </strong>3 microliters of Gel Red were added to the solution<br><strong>5. </strong>A well comb was added to the gel cast, the solution was poured into the gel cast and allowed
+                        to solidify</p>
+                    <p><strong><span style="text-decoration: underline;">Cas12 Cleavage with Cra gene:</span></strong><br></p>
+                    <p><strong>1. </strong>Making 125nM gRNA: 0.2 μl of 1000 μM gRNA and 1.58 ml of water were mixed<br><strong>2.</strong> Making 100nM CRISPR LbCas12a: 1 μl of 100 μM Cas12 and 999 μl of water<br><strong>3. </strong>1 μl of each solution
+                        were used to make 2 μl 62.5nM gRNA : 50nM Cas12a solution and added to approximately 18 μl of Cra<br>DNA solution.<br><strong>4. </strong>The same solution was made with 1 μl each of undiluted Cas12a and gRNA solutions (gRNA: 1000
+                        μM; CAS12a: 100 μM).<br><strong>5. </strong>The solutions were left to set for 1.5 hours in 37°C incubator.<br><strong>6. </strong>A Gel electrophoresis was ran for the two samples and the control</p><div class="text-center"><img src="https://2019.igem.org/wiki/images/9/9b/T--NYU_Abu_Dhabi--lab1.png" style="width: 635px;" />
+
+<figcaption class="figure-caption">Lane 1: ladder (100bp - 500bp), Lane 2: Control, Lane 3: sample with diluted
+    CRISPR reagents, Lane 4: sample with undiluted reagents</figcaption>
+
+    </div>
+                    <p><br></p>
+                    <p><strong><span style="text-decoration: underline;">Resuspended pcaA, HBcAg and IS481 gBlock gene fragments from IDT</span></strong></p>
+                    <p><strong>1. </strong>For 500ng gBlocks, 50μL of molecular grade water was added to the tube. For 1000ng gBlocks, 100μL of molecular grade water<br>was added to the tube to reach a final concentration of 10ng/μL<br><strong>2. </strong>The
+                        tubes were vortexed briefly then incubated at 50°C for 15 mins<br><strong>3. </strong>The tubes were briefly vortexed and centrifuged for 5 seconds<br><strong>4. </strong>The concentration of each gBlock resuspension was taken
+                        with the NanoDrop<br>pcaA: 8.7 ng/μL<br>HBcAg: 11.2 ng/μL<br>IS481: 8.2 ng/μL<br></p><div class="text-center"><img src="https://2019.igem.org/wiki/images/8/83/T--NYU_Abu_Dhabi--lab2.png" style="width: 632px;" class = "text-center" />
+
+<figcaption class="figure-caption">pJET Blunt End Ligation</figcaption>
+
+</div>
+                    <p><br><strong>5. </strong>Prepared Thermo Scientific CloneKet PCR Cloning Kit reagent mix in a PCR tube on ice<br><strong>6. </strong>Added 10μL 2X Reaction Buffer<br><strong>7. </strong>Added 1μL resuspended pcaA gBlock gene fragement<br><strong>8.</strong>                        Added 1μL pJET 1.2/blunt cloning vector (50ng/μL)<br><strong>9. </strong>Added 7μL nuclease-free water<br><strong>10.</strong> Added 1μL T4 DNA Ligase<br><strong>11. </strong>Incubated at room temperature for 5 minutes<br><strong>12. </strong>Repeated
+                        for HBcAg and IS481 gBlocks</p>
+                    <p><strong><span style="text-decoration: underline;">Transformation of E.coli via electroporation using ligated pJET vectors incubated for 5 minutes</span></strong><br></p>
+                    <p></p>
+                    <p><strong>1. </strong>Aliquoted 33μL of electrocompetent E.coli into 3 eppendorf tubes<br><strong>2. </strong>Added either 10μL of pcaA, HBcAg or IS481 ligated pJET vectors into each of 3 eppendorf tubes<br><strong>3. </strong>Pipette
+                        up and down to mix<br><strong>4.</strong> Pipette contents of each eppendorf tube (cells with either pcaA, HBcAg or IS481) into electroporation cuvette<br><strong>5. </strong>Place into electroporation machine and electroporate<br><strong>6.</strong>                        Resuspend cells in 960μL of SOC by pipetting up and down in cuvette<br><strong>7. </strong>Pour cuvette contents into 3 separate eppendorf tubes<br><strong>8. </strong>Incubated on shaker at 220rpm and 37°C for one hour<br><strong>9. </strong>Centrifuged
+                        for 1 minute at at 13000rpm, discarded 800μL supernatant from each eppendorf tube<br><strong>10. </strong>Pellets were resuspended by pipetting up and down<br><strong>11. </strong>Cells were spread on LB+AMP agar plates and placed
+                        in 37°C incubator overnight</p>
+                    <p>Results of Ligation and Transformation using electroporation and 5 minute ligation incubation:<br>No growth on plates after overnight incubation.</p>
+                    <div class="col">
+                        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item"><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/4/4a/T--NYU_Abu_Dhabi--lab3.png" alt="Slide Image" />
+
+<figcaption class="figure-caption">IS481 transformation result</figcaption> </div>
+                                <div class="carousel-item"><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/6/66/T--NYU_Abu_Dhabi--lab4.png
+" alt="Slide Image" />
+
+<figcaption class="figure-caption">pcaA transformation result</figcaption> </div>
+                                <div class="carousel-item active"><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/f/f6/T--NYU_Abu_Dhabi--lab5.png" alt="Slide Image" />
+
+<figcaption class="figure-caption">HbcAg transformation result</figcaption> </div>
+                            </div>
+                            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1"
+                                    role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-1" data-slide-to="0"></li>
+                                <li data-target="#carousel-1" data-slide-to="1"></li>
+                                <li data-target="#carousel-1" data-slide-to="2" class="active"></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <p></p>
+                    <h2>Tuesday&nbsp;<strong>:</strong>&nbsp;7/16/2019</h2>
+                    <p><strong>Transformation with Heat Shock and 24 hour ligation incubation</strong><br></p>
+                    <p><strong><span style="text-decoration: underline;">pJET Blunt End Ligation</span></strong><br></p>
+                    <p><strong>1.</strong> Prepared Thermo Scientific CloneKet PCR Cloning Kit reagent mix in a PCR tube on ice<br><strong>2. </strong>Added 10μL 2X Reaction Buffer<br><strong>3. </strong>Added 1μL resuspended pcaA gBlock gene fragement<br><strong>4. </strong>Added
+                        1μL pJET 1.2/blunt cloning vector (50ng/μL)<br><strong>5. </strong>Added 7μL nuclease-free water<br><strong>6. </strong>Added 1μL T4 DNA Ligase<br><strong>7.</strong> Incubated at room temperature for 16 hours<br><strong>8.</strong>                        Repeated for HBcAg and IS481 gBlocks</p>
+                    <p><strong><span style="text-decoration: underline;">Transformation of E.coli via heat shock using ligated pJET vectors incubated for 16 hours</span></strong><br></p>
+                    <p><strong>1. </strong>Aliquoted 33μL of electrocompetent E.coli into 3 eppendorf tubes<br><strong>2. </strong>Added either 10μL of pcaA, HBcAg or IS481 ligated pJET vectors into each of 3 eppendorf tubes<br><strong>3. </strong>Iced for
+                        20 minutes,<br><strong>4. </strong>60 second heat shock in eppendorf heat block at 42°C<br><strong>5.</strong> Returned tubes to ice for 2 minutes<br><strong>6. </strong>Added 800μL of SOC<br><strong>7.</strong> Incubated on shaker
+                        at 220 rpm and 37°C for one hour<br><strong>8. </strong>Centrifuged for 1 minute at 13000rpm and discarded 700μL of supernatant<br><strong>9. </strong>Carefully resuspended the pellet and plated on LB+AMP agar<br><strong>10. </strong>Spreaded
+                        gently using plastic spreader<br><strong>11. </strong>Incubated overnight (16 hours) at 37 °C</p>
+                    <p>Results of Ligation and Transformation using heat shock and overnight ligation incubation:<br>Growth on plates.</p>
+                    <div class="carousel slide" data-ride="carousel" id="carousel-2">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item"><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/f/f3/T--NYU_Abu_Dhabi--lab6.png" alt="Slide Image" />
+
+<figcaption class="figure-caption">IS481 transformation result</figcaption> </div>
+                            <div class="carousel-item"><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/b/b4/T--NYU_Abu_Dhabi--lab7.png" alt="Slide Image" />
+
+<figcaption class="figure-caption">pcaA transformation result</figcaption></div>
+                            <div class="carousel-item active"><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/4/4d/T--NYU_Abu_Dhabi--lab8.png" alt="Slide Image" />
+
+<figcaption class="figure-caption">HbcAg transformation result</figcaption></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-2" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-2" data-slide-to="0"></li>
+                            <li data-target="#carousel-2" data-slide-to="1"></li>
+                            <li data-target="#carousel-2" data-slide-to="2" class="active"></li>
+                        </ol>
+                    </div>
+                    <figure class="figure"></figure>
+                    <h2>Wednesday :&nbsp;7/17/2019</h2>
+                    <p><strong>Inoculation of pcaA, HBcAg and IS481 colonies from transformation</strong><br></p>
+                    <p><strong><span style="text-decoration: underline;">Inoculation steps:</span></strong><br></p>
+                    <p><strong>1.</strong> 5mL LB broth was added to 3 15mL culture tubes<br><strong>2. </strong>A plastic inoculation loop was used to select a colony from each plate and was swirled in the corresponding broth to dislodge the<br>colony<br><strong>3. </strong>The
+                        tubes were loosely capped and incubated on a shaker at 220rpm and 37°C overnight (16 hours)</p>
+                    <h2>Thursday<strong> :</strong>&nbsp;7/18/2019</h2>
+                    <p><strong>Mini-prepped inoculated pcaA, HBcAg and IS481 samples</strong><br></p>
+                    <p><strong><span style="text-decoration: underline;">DNA extraction:</span></strong><br></p>
+                    <p><strong>1.</strong> Pellet 1–5 ml bacterial overnight culture by centrifugation at &gt;8000 rpm<br>(6800 x g) for 3 min at room temperature (15–25°C).<br><strong>2.</strong> Resuspend pelleted bacterial cells in 250 μl Buffer P1 and
+                        transfer to a<br>microcentrifuge tube.<br><strong>3. </strong>Add 250 μl Buffer P2 and mix thoroughly by inverting the tube<br>4–6 times until the solution becomes clear. Do not allow the lysis reaction to<br>proceed for more than
+                        5 min. If using LyseBlue reagent, the solution will turn<br>blue.<br><strong>4. </strong>Add 350 μl Buffer N3 and mix immediately and thoroughly by inverting the tube<br>4–6 times. If using LyseBlue reagent, the solution will turn
+                        colorless.<br><strong>5. </strong>Centrifuge for 10 min at 13,000 rpm (~17,900 x g) in a table-top<br>microcentrifuge.<br>October 2010<br>Quick-StartProtocol<br>Sample &amp; Assay Technologies<br><strong>6. </strong>Apply the supernatant
+                        from step 5 to the QIAprep spin column by decanting or<br>pipetting. Centrifuge for 30–60 s and discard the flow-through, or apply<br>vacuum to the manifold to draw the solution through the QIAprep spin column<br>and switch off
+                        the vacuum source.<br><strong>7.</strong> Recommended: Wash the QIAprep spin column by adding 0.5 ml Buffer PB Centrifuge for 30–60 s and discard the flow-through, or apply vacuum to<br>the manifold to draw the solution through
+                        the QIAprep spin column and switch<br>off the vacuum source.<br>Note: This step is only required when using endA+ strains or other bacteria<br>strains with high nuclease activity or carbohydrate content.<br><strong>8. </strong>Wash
+                        the QIAprep spin column by adding 0.75 ml Buffer PE.<br> Centrifuge for 30–60 s and discard the flow-through, or apply vacuum to<br>the manifold to draw the solution through the QIAprep spin column and switch<br>off the vacuum
+                        source. Transfer the QIAprep spin column to the collection tube.<br><strong>9. </strong>Centrifuge for 1 min to remove residual wash buffer.<br><strong>10. </strong>Place the QIAprep column in a clean 1.5 ml microcentrifuge tube.
+                        To elute DNA,<br>add 50 μl Buffer EB (10 mM Tris·Cl, pH 8.5) or water to the center of the<br>QIAprep spin column, let stand for 1 min, and centrifuge for 1 min</p>
+                    <p><strong>A nanodrop was used to measure the concentration of the plasmids.</strong></p><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/7/70/T--NYU_Abu_Dhabi--lab9.png" alt="Slide Image" />
+
+<figcaption class="figure-caption">*mini prep 2 and 3 of HBcAg gene are swapped</figcaption>
+                    <p></p>
+                    <p><strong>A gel electropheresis was run to confirm the ligation of the gblocks into the pJET vectors.</strong></p>
+                    <div class="carousel slide" data-ride="carousel" id="carousel-3">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item"><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/0/09/T--NYU_Abu_Dhabi--lab10.png" alt="Slide Image" />
+<figcaption class="figure-caption">
+
+    1. Ladder 2. HBcAg gblock 3. HBcAg MP1 4. HBcAg MP2 5. HBcAg MP3 6. pcaA gblock 7. pcaA MP1 8. pcaA MP2 9. pcaA
+MP3 10. IS481 gblock 11. IS481 MP1 12. IS481 MP2 13. IS481 MP3 14. pJET vector</figcaption></div>
+                            <div class="carousel-item active"><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/6/68/T--NYU_Abu_Dhabi--lab11.png" alt="Slide Image" />
+
+<figcaption class="figure-caption">
+
+   1. Ladder 2. HBcAg gblock 3. HBcAg MP1 4. HBcAg MP2 5. HBcAg MP3 6. pcaA gblock 7. pcaA MP1 8. pcaA MP2 9. pcaA
+MP3 10. IS481 gblock 11. IS481 MP1 12. IS481 MP2 13. IS481 MP3 14. pJET vector</figcaption></div>
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-3" role="button"
+                                data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-3" data-slide-to="0"></li>
+                            <li data-target="#carousel-3" data-slide-to="1" class="active"></li>
+                        </ol>
+                    </div>
+                    <p><br></p>
+                    <p><strong>Resuspension, ligation and transformation of ypo2088 gblock</strong><br></p>
+                    <p><strong><span style="text-decoration: underline;">Resuspended ypo2088 gBlock gene fragment from IDT :</span></strong><br></p>
+                    <p><strong>1. </strong>For 500ng gBlocks, 50μL of molecular grade water was added to the tube. For 1000ng gBlocks, 100μL of molecular grade water was added to the tube to reach a final concentration of 10ng/μL<br><strong>2. </strong>The
+                        tubes were vortexed briefly then incubated at 50°C for 15 mins<br><strong>3. </strong>The tubes were briefly vortexed and centrifuged for 5 seconds<br><strong>4. </strong>The concentration of the gBlock resuspension was taken with
+                        the NanoDrop<br></p>
+                    <p><strong><span style="text-decoration: underline;">Resupension Results:</span></strong><br></p><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/e/e5/T--NYU_Abu_Dhabi--lab12.png" alt="Slide Image" />
+
+                    <p><br></p>
+                    <p><strong>Transformation with Heat Shock and 2 hour ligation incubation</strong><br></p>
+                    <p><strong>pJET Blunt End Ligation</strong><br></p>
+                    <p><strong>1. </strong>Prepared Thermo Scientific CloneKet PCR Cloning Kit reagent mix in a PCR tube on ice<br><strong>2. </strong>Added 10μL 2X Reaction Buffer<br><strong>3. </strong>Added 1μL resuspended ypo2088 gBlock gene fragement<br><strong>4. </strong>Added
+                        1μL pJET 1.2/blunt cloning vector (50ng/μL)<br><strong>5.</strong> Added 7μL nuclease-free water<br><strong>6. </strong>Added 1μL T4 DNA Ligase<br><strong>7. </strong>Incubated at room temperature for 16 hours<br></p>
+                    <p><strong>Incubate DNA at room temperature for two hours at room temperature.</strong><br></p>
+                    <p><strong>Transformation of E.coli with ypo2088 via heat shock using ligated pJET vectors incubated for 16 hours</strong><br></p>
+                    <p><strong>1. </strong>Added 50 μL of electrocompetent E.coli into eppendorf tube<br><strong>2. </strong>Added 10μL of ypo2088 ligated pJET vectors into the eppendorf tube<br><strong>3. </strong>Iced for 20 minutes, followed by a 60 second
+                        heat shock in eppendorf heat block at 42°C<br><strong>4. </strong>Returned tibes to ice for 2 minutes<br><strong>5. </strong>Added 800μL of SOC<br><strong>6. </strong>Incubated on shaker at 220 rpm and 37°C for one hour<br><strong>7. </strong>Centrifuged
+                        for 1 minute at 13000rpm and discarded 700μL of supernatant<br><strong>8.&nbsp;</strong>Carefully resuspended the pellet and plated on LB+AMP agar. Less than or around 20 μL of the resuspended pellet were added to the plate.<br><strong>9. </strong>Spreaded
+                        gently using plastic spreader<br><strong>10.</strong> Incubated overnight (16 hours) at 37 °C<br></p>
+                    <p>Results of Ligation and Transformation using heat shock and overnight ligation incubation:<br>Formation of very few and small colonies after overnight incubation.<br></p><img class="w-100 d-block" src="https://2019.igem.org/wiki/images/4/40/T--NYU_Abu_Dhabi--lab13.png" alt="Slide Image" />
+
+<figcaption class="figure-caption">
+
+</figcaption>
+                    <p><br></p>
+                    <h2>Friday<strong> :</strong>&nbsp;7/19/2019</h2>
+                    <p><strong>Transformation with Heat Shock after 24 hour ligation incubation at room temperature of remaining 10μL of ypo2088 DNA and inoculation of ypo2088 transformed E.coli colonies from 7/18 transformation</strong><br></p>
+                    <p><strong>Transformation of E.coli with ypo2088 via heat shock using ligated pJET vectors incubated for 16 hours</strong><br></p>
+                    <p><strong>1. </strong>Added 50 μL of electrocompetent E.coli into eppendorf tube<br><strong>2. </strong>Added 10μL of ypo2088 ligated pJET vectors into the eppendorf tube<br><strong>3. </strong>Iced for 20 minutes, followed by a 60 second
+                        heat shock in eppendorf heat block at 42°C<br><strong>4. </strong>Returned tibes to ice for 2 minutes<br><strong>5.</strong> Added 800μL of SOC<br><strong>6.</strong> Incubated on shaker at 220 rpm and 37°C for one hour<br><strong>7. </strong>Centrifuged
+                        for 1 minute at 13000rpm and discarded 700μL of supernatant<br><strong>8.&nbsp;</strong>Carefully resuspended the pellet and plated on LB+AMP agar. Less than or around 20 μL of the resuspended pellet were added<br>to the plate.<br><strong>9.</strong>                        Spreaded gently using plastic spreader<br><strong>10. </strong>Incubated overnight (16 hours) at 37 °C<br></p>
+                    <p><strong>Inoculation of ypo2088 transformed E.coli colonies from transformation on Thurs 7/18:</strong><br></p>
+                    <p>1. 5mL LB broth was added to 2 15mL culture tubes<br>2. A plastic inoculation loop was used to select a colony from each plate and was swirled in the corresponding broth to dislodge the<br>colony<br>3. The tubes were loosely capped
+                        and incubated on a shaker at 220rpm and 37°C overnight (16 hours)<br></p>
+                </div>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1" style="width: 608px;">
+                <div class="text">
+                    <h2><a id="week2">WEEK 2</a></h2>
+                    <h2>Sunday :&nbsp;7/21/2019&nbsp;</h2>
+                    <p><strong>Inoculation of ypo2088 tranformed E.Coli colonies from tranformation on Friday 7/19</strong><br></p>
+                    <p><strong><span style="text-decoration: underline;">One sample from 2 hours ligation incubation and three samples from overnight ligation incubation</span></strong><br></p>
+                    <p>Mini-prepped two samples inoculated ypo2088 samples incubated for 2 hours and cultured for two nights. A nanodrop was used to measure the concentration of the plasmids.<br></p>
+<div class="text-center"><img src="https://2019.igem.org/wiki/images/c/c5/T--NYU_Abu_Dhabi--lab14.png" style="width: 632px;" class = "text-center" />
+
+</div>
+
+                    <h2>Monday :&nbsp;7/22/2019&nbsp;</h2>
+                    <p><strong>LAMP</strong></p>
+                    <p><strong><span style="text-decoration: underline;">FIP, BIP B3, F3 primer stock solutions were diluted to 10μM concentrations:</span></strong><br></p>
+<div class="text-center"><img src="https://2019.igem.org/wiki/images/5/50/T--NYU_Abu_Dhabi--lab15.png" style="width: 632px;" class = "text-center" />
+
+</div>
+
+                    <p><br></p>
+                    <h2>Tuesday :&nbsp;7/23/2019&nbsp;</h2>
+                    <p><strong><span style="text-decoration: underline;">RPA with IS481 and CRISPR</span></strong><br></p><p>RPA reaction tubes :<br />
+ a.  1 microliter of miniprep 1 IS481 <br />
+b.  1 microliter of miniprep 2  1S481<br />
+                                         c.  1 microliter of miniprep 3 IS 481<br />
+                                     d.  1 microliter of water - negative control<br />
+                                     e.  3 microliter of miniprep 1 IS481 - ( NB - check for higher template)<br />
+    The adjusted RPA Protocol: 10µL final volume:
+
+</p>
+                    <p><strong><span style="text-decoration: underline;">The adjusted RPA Protocol: 10µL final volume:</span></strong><br></p>
+                    <p>1. Reaction mix in 1.5 mL tube:<br>a. Primer A (10μM) - 2.4μL<br>b. Primer B (10μM) - 2.4μL<br>c. Rehydration Buffer - 29.5μL<br>d. dH2O - 8.2μL<br>2. Vortexed and spun the reaction mix briefly.<br>3. Added the reaction mix to freeze
+                        dried reaction. Pipetted up and down to mix.<br>4. Split the reaction into five volumes - 8.5μL to two separate PCR tubes.<br>5. Added 1μL of template in each tube.<br>6. Added 0.5μL of 280mM magnesium acetate and mixed well to
+                        start the reaction.<br>7. Incubate at 37-39°C for 20-40 min. For low copy number: removed after 4 min, vortexed, spun briefly and put back into the heating device.<br>8. After 20-40 min cleaned the amplicons before running the
+                        gel.</p>
+                    <p><strong><span style="text-decoration: underline;">CRA gene CRISPR using NEB and DETECTR protocals with DNase Substrate</span></strong><br></p>
+                    <p>3 Reaction tubes</p><div class="text-center"><img src="https://2019.igem.org/wiki/images/e/e5/T--NYU_Abu_Dhabi--lab16.png" style="width: 632px;" class = "text-center" />
+
+</div>
+                    <p></p>
+                    <p>1. Mixing CRISPR reagents according to NEB protocal:<br>a. Add into a 1.5 mL reaction tube the reagents in following order:<br>I. 20μL nuclease-free water<br>II. 3μL NEBuffer 2.1 Reaction Buffer (10X)<br>III. 3μL 300nM gRNA (1uL 100mM
+                        + 99uL IDTE --&gt; 6uL 1mM + 14uL IDTE)<br>IV. 1μL 1μM LbaCas12a<br>b. Pre-Incubated at room temperature for 15 minutes<br>2. Mixing CRISPR reagents according to DETECTR protocal:<br>a. Add into a 1.5mL reaction tube:<br>I. 1 μL
+                        125nM gRNA<br>II. 1μL 100nM LbaCas12a<br>3. Added 5μL nuclease free water to 3 DNaseAlert substrate single-use tubes<br>4. Added 5μL of 10X DNAseAlert Buffer to each tube<br>5. Added the two CRISPR reaction mix to two tubes respectively,
+                        pipetted up and down to mix.<br>6. Added 40μL nuclease-free H2O in third tube<br>7. Incubated at 37°C for 1 hour.<br>8. Viewed under 536nm LED light</p>
+                    <p><strong><span style="text-decoration: underline;">IDTE Buffer (10mM Tris, 0.1mM EDTA, pH7.5) Preparation</span></strong><br></p>
+                    <p>1. Added into a 600mL beaker:<br>a. 0.0146g of EDTA<br>b. 0.605g of Tris<br>c. 500mL of MilliQ water<br>2. Checked pH of the mixture.<br>3. 2M HCl was added until pH 7.5 was reached.<br>4. The mixture was autoclaved for 20 minutes.<br>5.
+                        After autoclave, small amount of the mixture was poured into a separate beaker and the pH was rechecked</p>
+                    <p><strong><span style="text-decoration: underline;">Miniprep Plasmid concentration for ypo2088 after 24hour ligation incubation</span></strong><br></p>
+                    <p>A nanodrop was used to measure the concentration of the plasmids.</p>
+<div class="text-center"><img src="https://2019.igem.org/wiki/images/6/6b/T--NYU_Abu_Dhabi--lab17.png" style="width: 632px;" class = "text-center" />
+
+    <figcaption class="figure-caption">pJET Blunt End Ligation</figcaption>
+
+</div>
+
+                    <figure class="figure"></figure>
+                    <p><strong><span style="text-decoration: underline;">CRISPR reaction following NEB protocol:</span></strong><br></p>
+                    <p>1. Assemble the reaction at room temperature in the following order*:<br>a. 20μl Nuclease-free water<br>b. 3μl NEBuffer 2.1 Reaction Buffer (10x)<br>c. 3μl 300nM gRNA<br>d. 1μl 1 μM EnGen Lba Cas12a (Cpf1)<br>2. Pre-incubate for 10
+                        minutes at 250C.<br>3. Add 3 μl of 30 nM substrate DNA (30 μl final volume).<br>4. Vortex and pulse-spin in a microfuge.<br>5. Incubate at 37°C for 10 minutes.<br>6. Add DNase to each sample, Mix thoroughly and pulse-spin in a
+                        microfuge.<br>7. Incubate at room temperature for 10 minutes.<br>8. Add 5 μl of DNase alert buffer<br>9. Incubate for 60 minutes at 37°C.<br>10. Proceed with analysis.</p>
+                    <p><strong>ypo 2088 gel results:</strong></p>
+
+                    <div class="text-center"><img src="https://2019.igem.org/wiki/images/1/1c/T--NYU_Abu_Dhabi--lab18.png" style="width: 632px;" class = "text-center" />
+
+                        <figcaption class="figure-caption">1. Ladder 2. ypo2088 gblock 3. ypo 2088 MP1 (21st July) 4. ypo2088 MP2 (July 21st) 5. ypo2088 MP3 (July 24th) 6.ypo2088 MP4
+                            (July 24th) 7. ypo2088 MP5 (July 24th)</figcaption>
+
+                    <div class="text-center"><img src="https://2019.igem.org/wiki/images/f/f2/T--NYU_Abu_Dhabi--lab19.png" style="width: 632px;" class = "text-center" />
+
+                        <figcaption class="figure-caption">CRISPR Experiment Results from Cra Gene: 1. Ladder 2. Negative Control 3.DETECTR Protocol 4.NEB Protocol</figcaption>
+
+                    <div class="text-center"><img src="https://2019.igem.org/wiki/images/e/e9/T--NYU_Abu_Dhabi--lab20.png" style="width: 632px;" class = "text-center" />
+
+                        <figcaption class="figure-caption">100 bp ladder- IS481 MP1-IS481 MP2- IS481 MP3- negative control-IS481 MP1</figcaption>
+
+                    <div class="text-center"><img src="https://2019.igem.org/wiki/images/4/4d/T--NYU_Abu_Dhabi--lab21.png" style="width: 632px;" class = "text-center" />
+
+                        <figcaption class="figure-caption">CRISPR on IS481: MP1-MP2-MP3-Negative control -concentrated MP1</figcaption>
+
+                    <div class="text-center"><img src="https://2019.igem.org/wiki/images/6/63/T--NYU_Abu_Dhabi--lab22.png" style="width: 632px;" class = "text-center" />
+
+                         <figcaption class="figure-caption">1. ladder 2. MP1 3. MP2 4. MP3 5. -ve control 6. concentrated MP1</figcaption>
+
+
+
+                    <h2>Thursday :&nbsp;7/25/2019&nbsp;</h2>
+                    <p><strong><span style="text-decoration: underline;">IS481 RPA + CRISPR repeat</span></strong><br></p>
+                    <p>RPA reaction tubes : a. 1 microliter of miniprep 1 IS481<br> b. 1 microliter of miniprep 2 1S481<br> c. 1 microliter of miniprep 3 IS 481<br> d. 1 microliter of water - negative control<br> e. 0.5 microliter of miniprep 2 IS481</p>
+                    <p><strong><span style="text-decoration: underline;">ypo2088 RPA + CRISPR</span></strong><br></p>
+                    <p>RPA reaction tubes: a. 1 microliter of miniprep 1 ypo2088<br> b. 1 microliter of miniprep 2 ypo2088<br> c. 1 microliter of miniprep 3 ypo2088<br> d. 1 microliter of water - negative control<br> e. 0.5 microliter of miniprep 1 ypo2088
+                        + 0.5 microliter of water</p>
+                    <p><strong>A nanodrop was used to measure the concentration of the plasmids</strong><br></p>
+
+                    <div class="text-center"><img src="https://2019.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--julyedit1.png" style="width: 632px;" class = "text-center" />
+
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1" style="width: 608px;">
+                <div class="text">
+                    <h2><a id="week3">WEEK 3</a></h2>
+                    <h2>Tuesday :&nbsp;7/30/2019&nbsp;</h2>
+                    <p><strong>PCR of minipreped plasmids</strong><br></p>
+                    <p><strong><span style="text-decoration: underline;">Resuspension of Lyophilized Primers</span></strong><br></p>
+                    <p>a. Added volume of water indicated on order sheet (differed for each primer) to make 100 μM of each primer<br>b. Pipetted up and down to mix<br></p>
+                    <p><strong><span style="text-decoration: underline;">Preparation of PCR mix</span></strong><br></p>
+                    <p>a.Prepared 10 μM working stock of each primer by extracting 5 ul of 100 uM stock and adding 45 ul of distilled water to a<br>total of 50 ul.<br>b. Labelled each eppendorf tube with name of gene and sample number (1,2,3, postive control,
+                        negative control)<br>c. Added 20 ul PCR Mastermix to each tube<br>d. Added 1 ul of 10 uM forward primers to each appropriate tube. This was done for all genes.<br>e. Added 1 ul of 10 uM reverse primers to each appropriate tube.
+                        This was done for all genes.<br>f. Added 2ul DNA minipreps (1, 2, 3, and gblock) to each tube. None was added to negative control.<br>g. Water was added to reach a total volume ot 40 ul (16 ul for each tube with DNA and 18 ul for
+                        negative control)<br>h. PCR temperatures were set on machine according to BioRad protocol and 40 cycles were done.<br>i. PCR was left overnight.<br></p>
+                    <h2>Wednesday :&nbsp;7/31/2019&nbsp;</h2>
+                    <p><strong>Visualition of PCR results using Gel Electrophoresis</strong><br></p>
+                    <p>E-Gel<br>a. 10 ul of ladder solution was added to 5 ul of H2O<br>b. 2.5 ul of dye was added to 12.5 ul of sample for all the genes and the replicates along with the negative control<br>c. The samples were loaded onto the ready-made
+                        E-gel<br>d. The gel was run for 20 minutes<br>e. The gel was observed under UV light for analysis<br><strong>Results:</strong><br>pcaA and HBcAg<br></p>
+
+                        <div class="text-center"><img src="https://2019.igem.org/wiki/images/7/7d/T--NYU_Abu_Dhabi--lab23.png" style="width: 632px;" class = "text-center" />
+
+                            <figcaption class="figure-caption">No bands appeared for any of the pcaA samples, negative control contamination was observed for HBcAg</figcaption>
+
+                        <br>IS481 and CO92<br>
+
+                        <div class="text-center"><img src="https://2019.igem.org/wiki/images/1/11/T--NYU_Abu_Dhabi--lab24.png" style="width: 632px;" class = "text-center" />
+
+                             <figcaption class="figure-caption">Successful bands appeared for IS481, negative control contamination appeared for CO92</figcaption>
+
+</div>
+
+
+    <div class="article-clean"></div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/new-age.js"></script>
+    <script src="assets/js/Right-Sidebar.js"></script>
+    <script src="assets/js/scrollSmooth.js"></script>
+    <script src="assets/js/Sidebar-Menu.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+
+
+
+        </div>
+    </div>
+    <!-- End: Article Clean -->
+    <!-- Start: 2 Rows 1+4 Columns -->
+      <div id="footerContainer" style="background-color: white;color:black;">
+        <!-- Start: HeartAnimation -->
+<script>
+    $(function () {
+        var controller5 = new ScrollMagic.Controller();
+        var rotateHeart = new TimelineMax()
+        .add(TweenMax.to("#heart_icon", 50, {rotation:180}),"up")
+        .add(TweenMax.to("#heart_icon", 50, {y:-100}),"up")
+        .add(TweenMax.to("#heart_icon", 50, {rotation:360}),"down")
+        .add(TweenMax.to("#heart_icon", 50, {y:0}),"down")
+        //microfluidicsContainer webapiHolder
+        var sceneHeart = new ScrollMagic.Scene({ duration:"100px",offset:"50px"})
+        //.setTween(rotateHeart)
+        .triggerElement("#socialContainer")
+       //.setPin("#middleFeatureContainer")
+                        //.addIndicators({name: "heart"})
+                        .addTo(controller5)
+        .on("start", ()=> {
+            var rotateHeart = new TimelineMax()
+        .add(TweenMax.to("#heart_icon", 1, {y:-30}),"up")
+        .add(TweenMax.to("#heart_icon", 1, {rotation:360,y:0}),"down")
+        });
+    });
+</script>
+        <!-- End: HeartAnimation -->
+        <div class="container" style="padding: 7px;background-color: white; color:black;">
+            <style>
+.sponsor-logo {
+    max-height:100px;
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .1s ease-in-out;
+    }
+    .sponsor-logo:hover {
+        max-height:100px;
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+    .mobile-space {
+        height:55px;
+    }
+        </style>
+
+            <div class="row d-xl-flex justify-content-xl-center text-center" style="background-color: white; color:black;">
+                <div class="col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/1/1f/T--NYU_Abu_Dhabi--PromegaLogo.jpeg/800px-T--NYU_Abu_Dhabi--PromegaLogo.jpeg"></div>
+                <div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/f/f2/T--NYU_Abu_Dhabi--MathworksLogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/3/34/T--NYU_Abu_Dhabi--IDTlogo.png/800px-T--NYU_Abu_Dhabi--IDTlogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/6/69/T--NYU_Abu_Dhabi--TwistLogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/e/e4/T--NYU_Abu_Dhabi--NYUAD-LOGO.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/a/a5/T--NYU_Abu_Dhabi--NYU-logo.png/800px-T--NYU_Abu_Dhabi--NYU-logo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+            </div>
+        </div>
+    </div></div>
+    <!-- End: 2 Rows 1+4 Columns -->
+    <footer style="background:white;color:black;">
+        <div class="container">
+            <p>©&nbsp;Volatect 2019. All Rights Reserved.</p>
+            <ul class="list-inline" style="background:white;color:black;">
+                <li class="list-inline-item"><a href="#" style="background:white;color:black;">Privacy</a></li>
+                <li class="list-inline-item"><a href="#" style="background:white;color:black;">Terms</a></li>
+                <li class="list-inline-item"><a href="#"  style="background:white;color:black;">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/bootstrapjs?action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/sampleScript?action=raw&ctype=text/javascript"></script>
+</body>
+
+</html>

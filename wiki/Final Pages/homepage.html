@@ -21,11 +21,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <!-- <link rel="stylesheet" href="assets/css/styles.min.css"> -->
+    <link rel="prefetch" href="https://2019.igem.org/wiki/images/thumb/0/0a/T--NYU_Abu_Dhabi--prender1.png/1600px-T--NYU_Abu_Dhabi--prender1.png">
 
 </head>
 
 <body id="page-top">
-    <!-- Start: *DEPENDANCIES AND PRELOADING --><script
+    <!-- Start: *DEPENDANCIES AND PRELOADING -->
+    <script
   src="https://2019.igem.org/Team:NYU_Abu_Dhabi/jquery?action=raw&ctype=text/javascript"></script>
    <script>
         $(document).ready(function() {
@@ -53,13 +55,7 @@
     <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/sampleScript?action=raw&ctype=text/javascript"></script>
 
 <script src="https://2019.igem.org/Team:NYU_Abu_Dhabi/IndicatorDebug?action=raw&ctype=text/javascript"></script>
-<link rel="prefetch" href="https://2019.igem.org/wiki/images/0/00/T--NYU_Abu_Dhabi--iphone.png">
-<link rel="prefetch" href="https://2019.igem.org/wiki/images/5/5d/T--NYU_Abu_Dhabi--d1.png">
-<link rel="prefetch" href="https://2019.igem.org/wiki/images/4/48/T--NYU_Abu_Dhabi--d2.png">
-<link rel="prefetch" href="https://2019.igem.org/wiki/images/a/ad/T--NYU_Abu_Dhabi--d3.png">
-<link rel="prefetch" href="https://2019.igem.org/wiki/images/3/3d/T--NYU_Abu_Dhabi--d4.png">
-<link rel="prefetch" href="https://2019.igem.org/wiki/images/2/2b/T--NYU_Abu_Dhabi--d5.png">
-<link rel="prefetch" href="https://2019.igem.org/wiki/images/2/2c/T--NYU_Abu_Dhabi--d6.png">
+
 
     <!-- End: *DEPENDANCIES AND PRELOADING -->
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="padding:20px 0px;" id="mainNav">
@@ -196,7 +192,7 @@ $(this).children("div").fadeIn(400);
 </div>
         </div>
         <!-- Start: HEADER_ANIMATIONS --><div  style="position:fixed;left: 0;
-right: 0;" id="productImage"><div class="text-center"><img id="productImageActual" src="https://2019.igem.org/wiki/images/0/00/T--NYU_Abu_Dhabi--iphone.png" ><div id="pinTheProduct"></div></div></div>
+right: 0;" id="productImage"><div class="text-center"><img id="productImageActual" src="https://2019.igem.org/wiki/images/thumb/0/0a/T--NYU_Abu_Dhabi--prender1.png/1600px-T--NYU_Abu_Dhabi--prender1.png" style="max-width:900px;" ><div id="pinTheProduct"></div></div></div>
 
 <script>
     $(function () { // wait for document ready
@@ -213,15 +209,21 @@ right: 0;" id="productImage"><div class="text-center"><img id="productImageActua
         var tweenFadeOut = TweenMax.to("#productImage", 1000, {opacity:0});
         var tweenRotate = TweenMax.to("#productImageActual",0,{rotation:0});
         var images = [
-        "https://2019.igem.org/wiki/images/0/00/T--NYU_Abu_Dhabi--iphone.png",
-        "https://2019.igem.org/wiki/images/5/5d/T--NYU_Abu_Dhabi--d1.png",
-        "https://2019.igem.org/wiki/images/4/48/T--NYU_Abu_Dhabi--d2.png",
-        "https://2019.igem.org/wiki/images/a/ad/T--NYU_Abu_Dhabi--d3.png",
-        "https://2019.igem.org/wiki/images/3/3d/T--NYU_Abu_Dhabi--d4.png",
-        "https://2019.igem.org/wiki/images/2/2b/T--NYU_Abu_Dhabi--d5.png",
-            "https://2019.igem.org/wiki/images/2/2c/T--NYU_Abu_Dhabi--d6.png"
-
+        "https://2019.igem.org/wiki/images/thumb/0/0a/T--NYU_Abu_Dhabi--prender1.png/1600px-T--NYU_Abu_Dhabi--prender1.png",
+        "https://2019.igem.org/wiki/images/thumb/d/db/T--NYU_Abu_Dhabi--prender2.png/1600px-T--NYU_Abu_Dhabi--prender2.png",
+        "https://2019.igem.org/wiki/images/thumb/e/e5/T--NYU_Abu_Dhabi--prender3.png/1600px-T--NYU_Abu_Dhabi--prender3.png",
+        "https://2019.igem.org/wiki/images/thumb/1/1f/T--NYU_Abu_Dhabi--prender4.png/1600px-T--NYU_Abu_Dhabi--prender4.png",
+        "https://2019.igem.org/wiki/images/thumb/f/fa/T--NYU_Abu_Dhabi--prender5.png/1600px-T--NYU_Abu_Dhabi--prender5.png",
+        "https://2019.igem.org/wiki/images/thumb/1/1b/T--NYU_Abu_Dhabi--prender6.png/1600px-T--NYU_Abu_Dhabi--prender6.png",
+            "https://2019.igem.org/wiki/images/thumb/f/f5/T--NYU_Abu_Dhabi--prender7.png/1600px-T--NYU_Abu_Dhabi--prender7.png"
     ];
+
+    arrayLength = images.length;
+for (i = 0; i < arrayLength; i++) {
+  //  <link rel="prefetch" href="https://2019.igem.org/wiki/images/thumb/0/0a/T--NYU_Abu_Dhabi--prender1.png/1600px-T--NYU_Abu_Dhabi--prender1.png">
+  let code ="<link rel='prefetch' href='" + images[i] + "'>";
+ $('head').append(code);
+}
 
     // TweenMax can tween any property of any object. We use this object to cycle through the array
     var obj = {curImg: 0};
@@ -373,7 +375,7 @@ right: 0;" id="productImage"><div class="text-center"><img id="productImageActua
 </div>
         <!-- End: TargetGroupVideoMobile -->
     </div>
-    <img src="https://2019.igem.org/wiki/images/thumb/4/47/T--NYU_Abu_Dhabi--collectInfo.jpg/539px-T--NYU_Abu_Dhabi--collectInfo.jpg" class="text-center img-fluid"/>
+
     <!-- Start: How does it work? -->
     <section style="display:none;" id="volatectSteps" class="index-howto-alt py-3 " >
         <div class="container d-none d-lg-block" style="padding: 100px 0px; ">
@@ -425,10 +427,10 @@ right: 0;" id="productImage"><div class="text-center"><img id="productImageActua
     <!-- End: How does it work? -->
     <div></div>
     <!-- Start: Features Desktop -->
-    <div id="engineeringbio" class="d-none d-lg-block" style="background-color: white;background-image: url(&quot;https://2019.igem.org/wiki/images/f/f3/T--NYU_Abu_Dhabi--bg-pattern.png&quot;);height: 300vh;width: 100%;"><div id="middleMarker"></div>
+    <div id="engineeringbio" class="d-none d-lg-block" style="background-color: black;background-image: url(&quot;https://2019.igem.org/wiki/images/f/f3/T--NYU_Abu_Dhabi--bg-pattern.png&quot;);height: 300vh;width: 100%;"><div id="middleMarker"></div>
 <div class="row " style="position:fixed;top:25%;width:100%;opacity:0;" id="featuresHeaderText">
    <div style="width:100%;" class="col w-100 text-center">
-       <h1 style="color:white;font-size: 9vh;">State of the art Engineering and Biology</h1>
+       <h1 style="color:white;font-size: 9vh;">State of the art <span style="color:#fdcc52">Engineering</span> and <span style="color:#fdcc52;">Biology</span></h1>
     </div>
 </div>
 
@@ -538,7 +540,7 @@ init();
     <div id="featureInfoHolder" class="col-sm-5 my-auto">
     <h1 class="headingTextBioEngineering" style="font-size: 5vw;">Crispr</h1>
     <p class="gradientText" style="font-size: 1.5vw;">CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats) is a genome-editing technology derived from the bacterial defense system strategy to cut the DNA of viruses and other invading bodies. The method we are utilizing, DETECTR, involves the use of CRISPR-Cas12a to accurately detect a DNA sequence and cut a fluorescent probe to release light upon detection.
-</p><button class="btn btn-primary" type="button">Learn more</button></div>
+</p><button class="btn btn-primary engineeringbiobutton" type="button">Learn more</button></div>
 </div>
 
 
@@ -734,7 +736,7 @@ init();
     <h1 class="headingTextBioEngineering" style="font-size: 5vw;">Microfluidics</h1>
     <p class="gradientText" style="font-size: 1.5vw;">
 Microfluidics unites the reliability of lab tests with the  integrated efficiency of a printed circuit board. It tackles the challenges of controlling fluid flow in micromillimeters sized channel geometries and facilitating complex on-chip biological protocols both spatially and temporally.  In accordance with the international trends of integrating technologies to ensure reliable use, scalability and user availability, Volatect's chip is the result of improving multiple iterations on iGEM's diagnostics track over the years and a pursuit of high standards both in signal quality and chemical contamination prevention.
-    </p><button class="btn btn-primary" type="button">Learn more</button></div>
+    </p><button class="btn btn-primary engineeringbiobutton" type="button">Learn more</button></div>
 </div>
 
 
@@ -3426,7 +3428,7 @@ function setRandomClass() {
     <h1 class="headingTextBioEngineering" style="font-size: 5vw;">WEB API</h1>
     <p class="gradientText" style="font-size: 1.5vw;">
       An API (Application Programming Interface) simply put is a way for applications to communicate with each other. The Volatect API is intended to be used by medical researchers. We believe that the data that comes out of air travel disease reports from our device could help immensely in the analysis and prediction of outbreaks around the world as we provide disease diagnosis in relation to the nationality and the flight path of the passengers.
-    </p><button class="btn btn-primary" type="button">Learn more</button></div>
+    </p><button class="btn btn-primary engineeringbiobutton" type="button">Learn more</button></div>
 
 </div>
 
@@ -3434,13 +3436,13 @@ function setRandomClass() {
 <style>
     @import "compass/css3";
     .headingTextBioEngineering {
-        color:white;
+        color:#fdcc52;
     }
 .gradientText {
 font-size: 2vw;
   background: #8A2387;
-  background: -webkit-linear-gradient(to right, #1E90FF, #00BFFF, #1E90FF);
-  background: linear-gradient(to right, #1E90FF, #00BFFF, #1E90FF);
+  background: -webkit-linear-gradient(to right, #C8C8C8	, #FFFFFF, #C8C8C8	);
+  background: linear-gradient(to right,#C8C8C8	, #FFFFFF, #C8C8C8);
 
   -webkit-background-clip: text;
 
@@ -3449,16 +3451,22 @@ font-size: 2vw;
     #engineeringbio {
         opacity:0;
     }
+    .engineeringbiobutton {
+      background:black;
+      border-color:#fdcc52;
+      display:none;
+    }
 </style><script>
 
     $(function () {
         var controller3 = new ScrollMagic.Controller();
         var tweenFadeIn = TweenMax.to("#engineeringbio", 1, {backgroundColor:"black",opacity:1});
+        var fadeoutvideo = TweenMax.to("#myVideo", 1, {opacity:"0"});
         var tweenStepsFadeIn = TweenMax.to("#volatectSteps", 1, {backgroundColor:"black"});
         var tweenRotate = TweenMax.to("#canvas-container", 1, {scale:"0.9",rotation:0});
         var tweenMicro =TweenMax.to("#microfluidics", 1, {scale:"1.5"});          //volatectSteps
        // var tween2 = TweenMax.to("#productImage", 1000, {rotation:"360"});
-        var timelineProductAnimation2 = new TimelineMax().add(tweenStepsFadeIn,"f").add(tweenFadeIn,"f").add(tweenRotate,"f").add(tweenMicro,"f");
+        var timelineProductAnimation2 = new TimelineMax().add(fadeoutvideo,"f").add(tweenRotate,"f").add(tweenMicro,"f");
         var sceneBack = new ScrollMagic.Scene({ duration:"200px",offset:"0"})
         .triggerElement("#engineeringbio")
         .setTween(timelineProductAnimation2)
@@ -3547,7 +3555,7 @@ font-size: 2vw;
                                   CRISPR technology is a simple yet powerful tool for editing genomes. It allows researchers to easily alter DNA sequences and modify gene function. Its many potential applications include correcting genetic defects, treating and preventing
                                       the spread of diseases and improving crops. However, its promise also raises ethical concerns.In popular usage, "CRISPR" (pronounced "crisper") is shorthand for "CRISPR-Cas9." CRISPRs are specialized stretches of DNA. The protein
                                       Cas9 (or "CRISPR-associated") is an enzyme that acts like a pair of molecular scissors, capable of cutting strands of DNA.
-                                </p><button class="btn btn-primary" data-toggle="modal" data-target="#crisprInfo" type="button">Learn More</button></div>
+                                </p></div>
                             <div class="Push-20"></div>
                         </div>
                         <div class="col-lg-6">
@@ -3557,7 +3565,7 @@ font-size: 2vw;
                                 <h3>Microfluidics</h3>
                                 <p class="text-muted">
 Microfluidics unites the reliability of lab tests with the  integrated efficiency of a printed circuit board. It tackles the challenges of controlling fluid flow in micromillimeters sized channel geometries and facilitating complex on-chip biological protocols both spatially and temporally.  In accordance with the international trends of integrating technologies to ensure reliable use, scalability and user availability, Volatect's chip is the result of improving multiple iterations on iGEM's diagnostics track over the years and a pursuit of high standards both in signal quality and chemical contamination prevention.
-                                </p><button class="btn btn-primary" data-toggle="modal" data-target="#crisprInfo" type="button">Learn More</button></div>
+                                </p></div>
                             <div class="Push-20"></div>
                         </div>
                         <div class="col-lg-6">
@@ -3565,7 +3573,7 @@ Microfluidics unites the reliability of lab tests with the  integrated efficienc
                                 <h3>Volatect API</h3>
                                 <p class="text-muted">
 We built a WEB API that allows secure access to the data we collect using our device. Medical researchers can now use the data we collect from passengers in airports to predict and report disease outbreaks before they happen.&nbsp;
-                                </p><button class="btn btn-primary" data-toggle="modal" data-target="#crisprInfo" type="button">Learn More</button></div>
+                                </p></div>
                             <div class="Push-20"></div>
                         </div>
                     </div>
@@ -3658,13 +3666,23 @@ We built a WEB API that allows secure access to the data we collect using our de
 
                 <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/thumb/a/a5/T--NYU_Abu_Dhabi--NYU-logo.png/800px-T--NYU_Abu_Dhabi--NYU-logo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
 
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--3mlogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/c/c6/T--NYU_Abu_Dhabi--ansyslogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/0/0a/T--NYU_Abu_Dhabi--jklogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+                <div class="col-md-3 col-xl-2 d-xl-flex justify-content-xl-center align-items-xl-center"><img class="img-fluid sponsor-logo" src="https://2019.igem.org/wiki/images/e/ee/T--NYU_Abu_Dhabi--snapgenelogo.png"></div><div class="col-xl-2 d-lg-none mobile-space" ></div>
+
+
+
             </div>
         </div>
     </div>
     <!-- End: 2 Rows 1+4 Columns -->
     <footer style="background-color: white; color:black;" class="text-center">
         <div class="container">
-            <p class="text-center">©&nbsp;Pathogenie 2019. All Rights Reserved.</p>
+            <p class="text-center">©&nbsp;Volatect 2019. All Rights Reserved.</p>
             <ul class="list-inline" style="color:black;">
                 <li class="list-inline-item"><a href="#" style="color:black;">Privacy</a></li>
                 <li class="list-inline-item"><a href="#" style="color:black;">Terms</a></li>
