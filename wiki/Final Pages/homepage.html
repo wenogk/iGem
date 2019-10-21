@@ -192,7 +192,7 @@ $(this).children("div").fadeIn(400);
 </div>
         </div>
         <!-- Start: HEADER_ANIMATIONS --><div  style="position:fixed;left: 0;
-right: 0;" id="productImage"><div class="text-center"><img id="productImageActual" src="https://2019.igem.org/wiki/images/thumb/0/0a/T--NYU_Abu_Dhabi--prender1.png/1600px-T--NYU_Abu_Dhabi--prender1.png" style="max-width:900px;" ><div id="pinTheProduct"></div></div></div>
+right: 0;" id="productImage"><div class="text-center"><img id="productImageActual" src="https://2019.igem.org/wiki/images/1/16/T--NYU_Abu_Dhabi--pn1.png" style="max-width:400px;" ><div id="pinTheProduct"></div></div></div>
 
 <script>
     $(function () { // wait for document ready
@@ -205,17 +205,41 @@ right: 0;" id="productImage"><div class="text-center"><img id="productImageActua
 
         //end hover
         // build tween
-        var tweenMoveProduct = TweenMax.to("#productImage", 1000, {top:"20%"});
+        var tweenMoveProduct = TweenMax.to("#productImage", 1000, {top:"25%"});
         var tweenFadeOut = TweenMax.to("#productImage", 1000, {opacity:0});
         var tweenRotate = TweenMax.to("#productImageActual",0,{rotation:0});
         var images = [
-        "https://2019.igem.org/wiki/images/thumb/0/0a/T--NYU_Abu_Dhabi--prender1.png/1600px-T--NYU_Abu_Dhabi--prender1.png",
-        "https://2019.igem.org/wiki/images/thumb/d/db/T--NYU_Abu_Dhabi--prender2.png/1600px-T--NYU_Abu_Dhabi--prender2.png",
-        "https://2019.igem.org/wiki/images/thumb/e/e5/T--NYU_Abu_Dhabi--prender3.png/1600px-T--NYU_Abu_Dhabi--prender3.png",
-        "https://2019.igem.org/wiki/images/thumb/1/1f/T--NYU_Abu_Dhabi--prender4.png/1600px-T--NYU_Abu_Dhabi--prender4.png",
-        "https://2019.igem.org/wiki/images/thumb/f/fa/T--NYU_Abu_Dhabi--prender5.png/1600px-T--NYU_Abu_Dhabi--prender5.png",
-        "https://2019.igem.org/wiki/images/thumb/1/1b/T--NYU_Abu_Dhabi--prender6.png/1600px-T--NYU_Abu_Dhabi--prender6.png",
-            "https://2019.igem.org/wiki/images/thumb/f/f5/T--NYU_Abu_Dhabi--prender7.png/1600px-T--NYU_Abu_Dhabi--prender7.png"
+        "https://2019.igem.org/wiki/images/1/16/T--NYU_Abu_Dhabi--pn1.png",
+        "https://2019.igem.org/wiki/images/3/35/T--NYU_Abu_Dhabi--pn2.png",
+        "https://2019.igem.org/wiki/images/e/ee/T--NYU_Abu_Dhabi--pn3.png",
+        "https://2019.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--pn4.png",
+        "https://2019.igem.org/wiki/images/e/e2/T--NYU_Abu_Dhabi--pn5.png",
+        "https://2019.igem.org/wiki/images/e/e8/T--NYU_Abu_Dhabi--pn6.png",
+            "https://2019.igem.org/wiki/images/3/32/T--NYU_Abu_Dhabi--pn8.png",
+            "https://2019.igem.org/wiki/images/3/32/T--NYU_Abu_Dhabi--pn9.png",
+            "https://2019.igem.org/wiki/images/e/ea/T--NYU_Abu_Dhabi--pn10.png",
+            "https://2019.igem.org/wiki/images/1/13/T--NYU_Abu_Dhabi--pn11.png",
+            "https://2019.igem.org/wiki/images/2/2e/T--NYU_Abu_Dhabi--pn12.png",
+            "https://2019.igem.org/wiki/images/f/f9/T--NYU_Abu_Dhabi--pn13.png",
+            "https://2019.igem.org/wiki/images/2/25/T--NYU_Abu_Dhabi--pn14.png",
+            "https://2019.igem.org/wiki/images/9/91/T--NYU_Abu_Dhabi--pn15.png",
+            "https://2019.igem.org/wiki/images/6/61/T--NYU_Abu_Dhabi--pn16.png",
+            "https://2019.igem.org/wiki/images/a/a9/T--NYU_Abu_Dhabi--pn17.png",
+            "https://2019.igem.org/wiki/images/4/42/T--NYU_Abu_Dhabi--pn18.png",
+            "https://2019.igem.org/wiki/images/8/87/T--NYU_Abu_Dhabi--pn19.png",
+            "https://2019.igem.org/wiki/images/3/34/T--NYU_Abu_Dhabi--pn20.png",
+            "https://2019.igem.org/wiki/images/1/1f/T--NYU_Abu_Dhabi--pn21.png",
+            "https://2019.igem.org/wiki/images/b/bd/T--NYU_Abu_Dhabi--pn22.png",
+            "https://2019.igem.org/wiki/images/6/66/T--NYU_Abu_Dhabi--pn23.png",
+            "https://2019.igem.org/wiki/images/b/bc/T--NYU_Abu_Dhabi--pn24.png",
+            "https://2019.igem.org/wiki/images/0/0e/T--NYU_Abu_Dhabi--p25.png",
+            "https://2019.igem.org/wiki/images/4/4b/T--NYU_Abu_Dhabi--p26.png",
+            "https://2019.igem.org/wiki/images/2/2c/T--NYU_Abu_Dhabi--p28.png",
+            "https://2019.igem.org/wiki/images/8/8e/T--NYU_Abu_Dhabi--p29.png"
+
+
+
+
     ];
 
     arrayLength = images.length;
@@ -245,7 +269,7 @@ for (i = 0; i < arrayLength; i++) {
         }
     );
         // build scene
-        var timelineProductAnimation = new TimelineMax().add(tweenHeaderFade).add(tweenRotate).add(tweenMoveProduct).add(tweenBlast).add(tweenFadeOut).add(tweenRemoveDisplay);
+        var timelineProductAnimation = new TimelineMax().add(tweenHeaderFade).add(tweenRotate).add(tweenMoveProduct).add(tweenBlast,"f").add(tweenFadeOut).add(tweenRemoveDisplay);
         var scene2 = new ScrollMagic.Scene({ duration:"150%",offset:"0"})
         .setPin("#productImage")
         .setTween(timelineProductAnimation)
@@ -427,7 +451,7 @@ for (i = 0; i < arrayLength; i++) {
     <!-- End: How does it work? -->
     <div></div>
     <!-- Start: Features Desktop -->
-    <div id="engineeringbio" class="d-none d-lg-block" style="background-color: black;background-image: url(&quot;https://2019.igem.org/wiki/images/f/f3/T--NYU_Abu_Dhabi--bg-pattern.png&quot;);height: 300vh;width: 100%;"><div id="middleMarker"></div>
+    <div id="engineeringbio" class="d-none d-lg-block" style="background-color: black;background-image: url(&quot;https://2019.igem.org/wiki/images/f/f3/T--NYU_Abu_Dhabi--bg-pattern.png&quot;);height: 500vh;width: 100%;"><div id="middleMarker"></div>
 <div class="row " style="position:fixed;top:25%;width:100%;opacity:0;" id="featuresHeaderText">
    <div style="width:100%;" class="col w-100 text-center">
        <h1 style="color:white;font-size: 9vh;">State of the art <span style="color:#fdcc52">Engineering</span> and <span style="color:#fdcc52;">Biology</span></h1>
@@ -751,25 +775,32 @@ display: block;
   padding: 0;
 }
 circle {
-  fill: blue;
+  fill: #fdcc52;
 }
 /* circle, */
 .banaan {
   fill: #00FF00;
-  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
-  border-radius: 50%;
+  border-radius: 25px;
+  animation: blinker 1s linear infinite;
 }
+
 .banaan2 {
   fill: red;
-  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
-  border-radius: 50%;
+  border-radius: 25px;
+  animation: blinker 1s linear infinite;
 }
+
 
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 
 @keyframes crescendo {
   0%   {transform: scale(.8);}
-  100% {transform: scale(100);}
+  100% {transform: scale(500);}
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 </style>
 <svg id="map" viewBox="0 0 845.2 458">
@@ -3411,12 +3442,15 @@ function setRandomClass() {
   //alert("yolo");
     items.removeClass("banaan");
     items.removeClass("banaan2");
+    items.attr("r","1.9");
   for(x=0;x<Math.random() * 25;x++){
     var random = Math.floor((Math.random() * number));
       var random2 = Math.floor((Math.random() * 10));
       if(random2<7) {
+  items.eq(random).attr("r","4");
   items.eq(random).addClass("banaan");
       } else {
+        items.eq(random).attr("r","4");
           items.eq(random).addClass("banaan2");
       }
 
@@ -3488,8 +3522,8 @@ font-size: 2vw;
 
         var controller4 = new ScrollMagic.Controller();
         var timelineFeatures = new TimelineMax()
-        .add(TweenMax.to("#featuresHeaderText", 50, {opacity:1,top:"45%"}))
-         .add(TweenMax.to("#featuresHeaderText", 50, {opacity:0,top:"35%"}),"q")
+        .add(TweenMax.to("#featuresHeaderText", 20, {opacity:1,top:"35%"}))
+         .add(TweenMax.to("#featuresHeaderText", 20, {opacity:0,top:"35%"}))
         .add(TweenMax.to("#featuresHeaderText", 1, {display:"none"}))
         .add(TweenMax.to("#middleFeatureContainer", 50, {opacity:1,top:"7%"}),"q")
         .add(TweenMax.to("#middleFeatureContainer", 10, {opacity:0}))
@@ -3502,7 +3536,7 @@ font-size: 2vw;
         .add(TweenMax.to("#webapiHolder", 1, {display:"none"}))
 
         //microfluidicsContainer webapiHolder
-        var sceneBack2 = new ScrollMagic.Scene({ duration:"300%",offset:0})
+        var sceneBack2 = new ScrollMagic.Scene({ duration:"500%",offset:0})
         .setTween(timelineFeatures)
         .triggerElement("#engineeringbio")
         .on("start", () => {
